@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_config"
+    app:startDestination="@id/distinguish_Fragment">
+
+    <fragment
+        android:id="@+id/distinguish_Fragment"
+        android:name="com.dawn.community.fragment.DistinguishFragment"
+        android:label="DistinguishFragment" />
+
+    <fragment
+        android:id="@+id/contact_Fragment"
+        android:name="com.dawn.community.fragment.SocialFragment"
+        android:label="ContactFragment" />
+
+    <fragment
+        android:id="@+id/discover_Fragment"
+        android:name="com.dawn.community.fragment.DiscoverFragment"
+        android:label="DiscoverFragment" />
+
+    <fragment
+        android:id="@+id/mine_Fragment"
+        android:name="com.dawn.community.fragment.MineFragment"
+        android:label="MineFragment" />
+
+</navigation>

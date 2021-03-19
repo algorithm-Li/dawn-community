@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">community</string>
+
+    <!--BottomNavigationView 的菜单内容  -->
+    <string name="menu_distinguish">识别</string>
+    <string name="menu_contact">社交</string>
+    <string name="menu_discover">发现</string>
+    <string name="menu_mine">我的</string>
+
+</resources>
