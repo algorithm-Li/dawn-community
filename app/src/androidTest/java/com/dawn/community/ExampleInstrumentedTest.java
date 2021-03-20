@@ -5,6 +5,9 @@ import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
+import com.dawn.community.bean.SocialTab;
+import com.dawn.community.utils.AppConfig;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -22,5 +25,17 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.dawn.community", appContext.getPackageName());
+    }
+
+    @Test
+    public void testSocialTabConfig(){
+        SocialTab socialTabConfig = AppConfig.getSocialTabConfig();
+        //assert socialTabConfig == null;
+        if(socialTabConfig == null){
+            System.out.println("socialTabConfig is null");
+        }else{
+            System.out.println("我爱你");
+        }
+
     }
 }

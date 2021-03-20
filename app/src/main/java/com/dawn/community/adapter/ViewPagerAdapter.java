@@ -2,37 +2,38 @@ package com.dawn.community.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import java.util.ArrayList;
 
 /**
- * 用于页面里的ViewPager2和TabLayout的结合
+ * ViewPager的适配器
  */
-public class ViewPagerAdapter extends FragmentStateAdapter {
+public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     //Fragment数组
     private ArrayList<Fragment> myFragmentList;
 
-    //构造函数
-    public ViewPagerAdapter(@NonNull Fragment fragment, ArrayList<Fragment> myFragmentList) {
-        super(fragment);
+    //构造函数，传递Fragment数组
+    public ViewPagerAdapter(@NonNull FragmentManager fm, ArrayList<Fragment> myFragmentList) {
+        super(fm);
         this.myFragmentList = myFragmentList;
     }
 
-    //返回Fragment页面
+    public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior, ArrayList<Fragment> myFragmentList) {
+        super(fm, behavior);
+        this.myFragmentList = myFragmentList;
+    }
+
     @NonNull
     @Override
-    public Fragment createFragment(int position) {
+    public Fragment getItem(int position) {
         return myFragmentList.get(position);
     }
 
-    /**
-     * 返回Fragment数量
-     * @return myFragmentList.size()
-     */
     @Override
-    public int getItemCount() {
+    public int getCount() {
         return myFragmentList.size();
     }
 }

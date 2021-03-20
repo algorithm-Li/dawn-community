@@ -16,6 +16,4 @@ public class DistinguishFragment extends BaseVmFragment<FragmentDistinguishBindi
     public int getLayoutId() {
         return R.layout.fragment_distinguish;
     }
-
-
 }

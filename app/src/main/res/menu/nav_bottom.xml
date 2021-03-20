@@ -5,7 +5,7 @@
         android:title="@string/menu_distinguish"
         android:icon="@mipmap/manage_64px" />
 
-    <item android:id="@+id/contact_Fragment"
+    <item android:id="@+id/social_Fragment"
         android:title="@string/menu_contact"
         android:icon="@mipmap/manage_64px" />
 

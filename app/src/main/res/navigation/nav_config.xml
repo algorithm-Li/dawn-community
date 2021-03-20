@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_config"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_config"
     app:startDestination="@id/distinguish_Fragment">
 
+    <!--若与BottomNavigationView结合，命名需与其menu里的id一一对应-->
     <fragment
         android:id="@+id/distinguish_Fragment"
         android:name="com.dawn.community.fragment.DistinguishFragment"
-        android:label="DistinguishFragment" />
+        android:label="DistinguishFragment"
+        tools:layout="@layout/fragment_distinguish"/>
 
     <fragment
-        android:id="@+id/contact_Fragment"
+        android:id="@+id/social_Fragment"
         android:name="com.dawn.community.fragment.SocialFragment"
-        android:label="ContactFragment" />
+        android:label="ContactFragment"
+        tools:layout="@layout/fragment_contacts"/>
 
     <fragment
         android:id="@+id/discover_Fragment"
         android:name="com.dawn.community.fragment.DiscoverFragment"
-        android:label="DiscoverFragment" />
+        android:label="DiscoverFragment"
+        tools:layout="@layout/fragment_discover"/>
 
     <fragment
         android:id="@+id/mine_Fragment"
         android:name="com.dawn.community.fragment.MineFragment"
-        android:label="MineFragment" />
+        android:label="MineFragment"
+        tools:layout="@layout/fragment_mine"/>
 
 </navigation>

@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="vm"
+            type="com.dawn.community.viewmodel.DiscoverViewModel" />
     </data>
 
     <LinearLayout
@@ -15,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.google.android.material.tabs.TabLayout
+            <!--<com.google.android.material.tabs.TabLayout
                 android:id="@+id/discover_tabLayout"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
@@ -25,7 +27,25 @@
                 app:tabIndicatorFullWidth="false"
                 app:tabSelectedTextColor="@color/black0"
                 app:tabTextColor="@color/gray1"
-                app:tabTextAppearance="@android:style/TextAppearance.Holo.Medium" />
+                app:tabTextAppearance="@android:style/TextAppearance.Holo.Medium" />-->
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/discover_tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                app:tabGravity="center"
+                bindDiscoverFragment="@{vm.fragment}"
+                discoverTabConfig="@{vm.tabConfig}"
+                detach="@{vm.destroy}"
+                fragmentType="@{vm.type}"
+                app:tabIndicatorColor="@color/color_theme"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="@dimen/dp_2"
+                app:tabInlineLabel="true"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/color_theme"
+                app:tabTextColor="@color/color_333"
+                app:tabUnboundedRipple="true" />
 
         </RelativeLayout>
 

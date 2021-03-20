@@ -57,7 +57,7 @@ public abstract class BaseVmFragment<T extends ViewDataBinding, VM extends ViewM
     /**
      * 创建ViewModel
      */
-    private void initViewModel() {
+    protected void initViewModel() {
         viewModel = new ViewModelProvider(this).get(getSubVMClass());
     }
 

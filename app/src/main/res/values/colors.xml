@@ -5,6 +5,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+    <!--主题颜色-->
+    <color name="color_theme">#ff7a15</color>
+
     <!--常用灰色-->
     <color name="gray0">#464646</color>
     <color name="gray1">#7e7e7e</color>
@@ -19,6 +22,9 @@
 
     <!--黑色-->
     <color name="black0">#000000</color>
+
+    <!--常用颜色-->
+    <color name="color_333">#333333</color>
 
 
 </resources>
