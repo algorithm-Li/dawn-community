@@ -12,12 +12,9 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.dawn.community.R;
-import com.dawn.community.bean.DiscoverTab;
-import com.dawn.community.bean.SocialTab;
-import com.dawn.community.fragment.ContactsFragment;
-import com.dawn.community.fragment.FollowFragment;
-import com.dawn.community.fragment.MessageFragment;
-import com.dawn.community.fragment.RecommendFragment;
+import com.dawn.community.bean.tabs.DiscoverTab;
+import com.dawn.community.fragment.discover.FollowFragment;
+import com.dawn.community.fragment.discover.RecommendFragment;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 

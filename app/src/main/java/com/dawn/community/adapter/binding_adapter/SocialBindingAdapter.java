@@ -12,9 +12,9 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.dawn.community.R;
-import com.dawn.community.bean.SocialTab;
-import com.dawn.community.fragment.ContactsFragment;
-import com.dawn.community.fragment.MessageFragment;
+import com.dawn.community.bean.tabs.SocialTab;
+import com.dawn.community.fragment.social.ContactsFragment;
+import com.dawn.community.fragment.social.MessageFragment;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
@@ -73,9 +73,12 @@ public class SocialBindingAdapter {
             //页面切换调用的函数，回调接口
             @Override
             public void onPageSelected(int position) {
+                //TabLayout的标题数量，也即页面数量
                 int tabCount = tabLayout.getTabCount();
+                //遍历所有的Tabs
                 for (int i = 0; i < tabCount; i++) {
                     TabLayout.Tab tab = tabLayout.getTabAt(i);
+                    //设置字体大小和类型
                     if(tab!=null){
                         TextView customView = (TextView) tab.getCustomView();
                         if(customView!=null){
@@ -97,6 +100,7 @@ public class SocialBindingAdapter {
             viewPager2.unregisterOnPageChangeCallback(mPageChangeCallback);
         }
 
+        //设置TabLayout的Gravity属性
         tabLayout.setTabGravity(tabConfig.tabGravity);
         //使用TabLayoutMediator结合TabLayout和ViewPager2
         new TabLayoutMediator(tabLayout, viewPager2, true, new TabLayoutMediator.TabConfigurationStrategy() {
@@ -106,8 +110,9 @@ public class SocialBindingAdapter {
                 int[][] states = new int[2][];
                 states[0] = new int[]{android.R.attr.state_selected};
                 states[1] = new int[]{};
-
+                //解析激活的颜色和正常颜色
                 int[] colors = new int[]{Color.parseColor(tabConfig.activeColor), Color.parseColor(tabConfig.normalColor)};
+                //设置颜色状态
                 ColorStateList stateList = new ColorStateList(states, colors);
                 tabView.setTextColor(stateList);
                 tabView.setText(tabs.get(position).title);

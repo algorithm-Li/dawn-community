@@ -14,13 +14,13 @@
 
     <fragment
         android:id="@+id/social_Fragment"
-        android:name="com.dawn.community.fragment.SocialFragment"
+        android:name="com.dawn.community.fragment.social.SocialFragment"
         android:label="ContactFragment"
         tools:layout="@layout/fragment_contacts"/>
 
     <fragment
         android:id="@+id/discover_Fragment"
-        android:name="com.dawn.community.fragment.DiscoverFragment"
+        android:name="com.dawn.community.fragment.discover.DiscoverFragment"
         android:label="DiscoverFragment"
         tools:layout="@layout/fragment_discover"/>
 

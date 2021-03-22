@@ -4,8 +4,8 @@ import android.content.res.AssetManager;
 
 import com.alibaba.fastjson.JSON;
 import com.dawn.community.CommunityApplication;
-import com.dawn.community.bean.DiscoverTab;
-import com.dawn.community.bean.SocialTab;
+import com.dawn.community.bean.tabs.DiscoverTab;
+import com.dawn.community.bean.tabs.SocialTab;
 
 import java.io.BufferedReader;
 import java.io.IOException;

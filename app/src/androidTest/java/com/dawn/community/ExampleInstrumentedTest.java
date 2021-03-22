@@ -5,7 +5,7 @@ import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
-import com.dawn.community.bean.SocialTab;
+import com.dawn.community.bean.tabs.SocialTab;
 import com.dawn.community.utils.AppConfig;
 
 import org.junit.Test;

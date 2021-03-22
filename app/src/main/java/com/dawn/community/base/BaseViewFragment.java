@@ -16,6 +16,8 @@ public abstract class BaseViewFragment<T extends ViewDataBinding> extends Fragme
     //数据绑定的获取对象
     protected T viewDataBinding;
 
+    protected View rootView;
+
     public BaseViewFragment() {
         super();
     }
@@ -25,7 +27,8 @@ public abstract class BaseViewFragment<T extends ViewDataBinding> extends Fragme
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //方式一
         viewDataBinding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false);
-        return viewDataBinding.getRoot();
+        rootView = viewDataBinding.getRoot();
+        return rootView;
         //方式二
         /*View view = inflater.inflate(getLayoutId(), container, false);
         T dataBinding = DataBindingUtil.bind(view);

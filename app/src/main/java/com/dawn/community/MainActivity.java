@@ -8,11 +8,11 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.dawn.community.adapter.ViewPagerAdapter;
-import com.dawn.community.fragment.DiscoverFragment;
+import com.dawn.community.adapter.utils_adapter.ViewPagerAdapter;
+import com.dawn.community.fragment.discover.DiscoverFragment;
 import com.dawn.community.fragment.DistinguishFragment;
 import com.dawn.community.fragment.MineFragment;
-import com.dawn.community.fragment.SocialFragment;
+import com.dawn.community.fragment.social.SocialFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomnavigation.LabelVisibilityMode;
 

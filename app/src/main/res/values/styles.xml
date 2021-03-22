@@ -1,17 +1,77 @@
 <resources>
-    <!-- Base application theme. -->
+    <!-- Base application theme. --><!--使用这个主题会导致BottomNavigationView底色变黑，解决方法未知-->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--开启动画-->
+        <item name="android:windowContentTransitions">true</item>
     </style>
 
+    <!--全局默认主题,先使用这个-->
     <style name="AppTheme2" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--开启动画-->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!--Text 基本样式，继承 TextAppearance.AppCompat-->
+    <style name="MyTextRegular" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/rubik_regular</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/colorMainText</item>
+        <item name="android:textColorHint">@color/colorTextHint</item>
+    </style>
+
+    <!--Text Bold(粗体) 基本样式，继承 TextAppearance.AppCompat-->
+    <style name="MyTextBold" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/colorMainText</item>
+    </style>
+
+    <!--Regular 小字号-->
+    <style name="MyTextRegularSmall" parent="MyTextRegular">
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <!--Regular 大字号-->
+    <style name="MyTextRegularLarge" parent="MyTextRegular">
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="MyTextError" parent="MyTextRegular">
+        <item name="android:textSize">@dimen/font_size_11</item>
+    </style>
+
+    <style name="MyTextBoldSmall" parent="MyTextBold">
+        <item name="android:textSize">@dimen/font_size_12</item>
+    </style>
+
+    <style name="MyTextBoldLarge" parent="MyTextBold">
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
+    <style name="MyEditTextRegular" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textColorHint">@color/colorTextHint</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="MyTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">@dimen/dp_0_8</item>
+    </style>
+
+    <style name="MyTextHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_size_12</item>
     </style>
 
 </resources>
