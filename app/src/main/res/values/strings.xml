@@ -25,4 +25,17 @@
 
     <!--分割线 ======================================================== -->
 
+    <!--个人信息Fragment页面的字符串-->
+    <string name="fragment_my_feed">帖子</string>
+    <string name="fragment_my_comment">评论</string>
+    <string name="fragment_my_favorite">收藏</string>
+    <string name="fragment_my_history">观看历史</string>
+    <string name="fragment_my_message">消息中心</string>
+    <string name="fragment_my_contacts">通讯录</string>
+    <string name="fragment_my_setting">设置中心</string>
+
+
+    <!--ImageView描述 待办，待补充-->
+    <string name="TODO">描述待补充</string>
+
 </resources>

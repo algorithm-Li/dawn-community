@@ -23,8 +23,15 @@
     <!--黑色-->
     <color name="black0">#000000</color>
 
+    <!--白色-->
+    <color name="color_white">#ffffff</color>
+
     <!--常用颜色-->
+    <color name="color_000">#000000</color>
     <color name="color_333">#333333</color>
+    <color name="color_666">#666666</color>
+    <color name="color_999">#999999</color>
+
 
     <!--分割线 ==================================================-->
     <!--登录页面，注册页面所用颜色-->

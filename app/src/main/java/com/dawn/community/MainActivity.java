@@ -79,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
         //ViewPager加载适配器
         mainViewPager = findViewById(R.id.main_viewPager);
         mainViewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(),myFragmentList));
+        //默认加载5个Fragment，防止主页面的Fragment不断重复销毁视图重建
+        mainViewPager.setOffscreenPageLimit(5);
 
     }
 

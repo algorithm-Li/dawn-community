@@ -1,5 +1,7 @@
 package com.dawn.community.fragment.discover;
 
+import android.util.Log;
+
 import androidx.fragment.app.Fragment;
 
 import com.dawn.community.R;
@@ -39,7 +41,8 @@ public class DiscoverFragment extends BaseVmFragment<FragmentDiscoverBinding, Di
     @Override
     protected void initView() {
         super.initView();
-        /*Log.d(TAG,"==> initView");
+        Log.d(TAG,"==> initView");
+        /*
         //添加默认的Fragment内容及TabLayout标题数据
         myFragmentList.clear();
         myFragmentTitleList.clear();

@@ -1,5 +1,7 @@
 package com.dawn.community.fragment.social;
 
+import android.util.Log;
+
 import androidx.fragment.app.Fragment;
 
 import com.dawn.community.R;
@@ -36,6 +38,7 @@ public class SocialFragment extends BaseVmFragment<FragmentSocialBinding, Social
     @Override
     protected void initView() {
         super.initView();
+        Log.d(TAG,"==> initView");
         //ViewPager2和TabLayout的结合在绑定适配器类中实现
         /*Log.d(TAG,"==> initView");
         //添加默认的Fragment内容及TabLayout标题数据
