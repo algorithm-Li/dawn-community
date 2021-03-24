@@ -1,12 +1,16 @@
 <resources>
     <!-- Base application theme. --><!--使用这个主题会导致BottomNavigationView底色变黑，解决方法未知-->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <!--开启动画-->
         <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <!--是否覆盖执行，其实可以理解成是否同步执行还是顺序执行-->
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
     </style>
 
     <!--全局默认主题,先使用这个-->
@@ -17,6 +21,10 @@
         <item name="colorAccent">@color/colorAccent</item>
         <!--开启动画-->
         <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <!--是否覆盖执行，其实可以理解成是否同步执行还是顺序执行-->
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
     </style>
 
     <!--Text 基本样式，继承 TextAppearance.AppCompat-->
@@ -73,5 +81,28 @@
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textSize">@dimen/font_size_12</item>
     </style>
+
+    <!--完成按钮 ，输入内容无改变时的style-->
+    <style name="BeforeChangeButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/shape_button_radius_before</item>
+        <item name="android:textColor">@color/gray11</item>
+    </style>
+
+    <!--完成按钮 ，输入内容发生改变时的style-->
+    <style name="AfterChangeButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/shape_button_radius_after</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="HintError" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorRedError</item>
+        <item name="android:background">@color/color_white</item>
+    </style>
+
 
 </resources>

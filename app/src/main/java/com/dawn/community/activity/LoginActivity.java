@@ -9,6 +9,7 @@ import android.view.animation.AnimationUtils;
 import com.dawn.community.CommunityApplication;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmActivity;
+import com.dawn.community.bean.history.HistoryItem;
 import com.dawn.community.databinding.ActivityLoginBinding;
 import com.dawn.community.utils.MyAnimations;
 import com.dawn.community.viewmodel.activity.LoginViewModel;
@@ -20,6 +21,7 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
         super.initView();
         viewDataBinding.etPassword.setTransformationMethod(new PasswordTransformationMethod());
         hideAllViews();
+
     }
 
     @Override

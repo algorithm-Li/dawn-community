@@ -19,6 +19,10 @@ public class CommunityApplication extends Application {
         context = getApplicationContext();
     }
 
+    /**
+     * 获取全局Context，唯一上下文
+     * @return applicationContext
+     */
     public static Context getContext() {
         return context;
     }

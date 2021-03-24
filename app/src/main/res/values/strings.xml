@@ -33,9 +33,37 @@
     <string name="fragment_my_message">消息中心</string>
     <string name="fragment_my_contacts">通讯录</string>
     <string name="fragment_my_setting">设置中心</string>
-
+    <string name="description">description</string>
 
     <!--ImageView描述 待办，待补充-->
     <string name="TODO">描述待补充</string>
+
+    <!--personInfo Fragment页面字符串内容-->
+    <string name="person_info_title">我的资料</string>
+    <string name="person_info_username_tip">昵称</string>
+    <string name="person_info_username">老八蜜汁汉堡</string>
+    <string name="person_info_username_change_tip">修改</string>
+    <string name="person_info_sex">保密</string>
+    <string name="person_info_sex_tip">性别</string>
+    <string name="person_info_sex_change_tip">设置</string>
+    <string name="person_info_birthday">1999年5月2日</string>
+    <string name="person_info_birthday_tip">生日</string>
+    <string name="person_sole_number">20182131039</string>
+    <string name="person_info_description">莂嫌棄一直婄伱の亽，莂婄一直嫌棄伱の亽。</string>
+    <string name="person_info_description_tip">签名</string>
+    <string name="person_info_description_change_tip">修改</string>
+    <string name="person_info_phone_number">13000000000</string>
+    <string name="person_info_phone_number_tip">手机号</string>
+    <string name="person_info_phone_number_change_tip">修改绑定</string>
+    <string name="person_info_other_account_tip">社交账号绑定</string>
+    <string name="person_info_email">13000000000@163.com</string>
+    <string name="person_info_email_tip">邮箱</string>
+    <string name="person_info_email_change_tip">修改绑定</string>
+    <string name="finish_text">完成</string>
+
+    <!--更换昵称 Fragment页面 字符串内容-->
+    <string name="change_name_title">更换昵称</string>
+    <string name="change_name_hint_text">请输入新的昵称</string>
+    <string name="change_name_tip_text">好名字可以让你的朋友更容易记住你</string>
 
 </resources>

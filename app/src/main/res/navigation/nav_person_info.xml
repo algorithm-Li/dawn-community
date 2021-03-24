@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_my"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/personInfoFragment">
+
+
+    <fragment
+        android:id="@+id/personInfoFragment"
+        android:name="com.dawn.community.fragment.person_info.PersonInfoFragment"
+        android:label="PersonInfoFragment"
+        tools:layout="@layout/fragment_person_info">
+
+        <action
+            android:id="@+id/action_personInfoFragment_to_changeNameFragment"
+            app:destination="@id/changeNameFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out"/>
+
+        <action
+            android:id="@+id/action_personInfoFragment_to_changeSexFragment"
+            app:destination="@id/changeSexFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out"/>
+
+        <action
+            android:id="@+id/action_personInfoFragment_to_changeBirthdayFragment"
+            app:destination="@id/changeBirthdayFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out"/>
+
+        <action
+            android:id="@+id/action_personInfoFragment_to_changePhoneFragment"
+            app:destination="@id/changePhoneFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out"/>
+
+        <action
+            android:id="@+id/action_personInfoFragment_to_bindSocialAccountFragment"
+            app:destination="@id/bindSocialAccountFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out"/>
+
+        <action
+            android:id="@+id/action_personInfoFragment_to_changeEmailFragment"
+            app:destination="@id/changeEmailFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out"/>
+
+        <action
+            android:id="@+id/action_personInfoFragment_to_changeDescriptionFragment"
+            app:destination="@id/changeDescriptionFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/changeNameFragment"
+        android:name="com.dawn.community.fragment.person_info.ChangeNameFragment"
+        android:label="ChangeNameFragment"
+        tools:layout="@layout/fragment_change_name"/>
+
+    <fragment
+        android:id="@+id/changeSexFragment"
+        android:name="com.dawn.community.fragment.person_info.ChangeSexFragment"
+        android:label="ChangeSexFragment"
+        tools:layout="@layout/fragment_change_sex"/>
+
+    <fragment
+        android:id="@+id/changeBirthdayFragment"
+        android:name="com.dawn.community.fragment.person_info.ChangeBirthdayFragment"
+        android:label="ChangeBirthdayFragment"
+        tools:layout="@layout/fragment_change_birthday"/>
+
+    <fragment
+        android:id="@+id/changePhoneFragment"
+        android:name="com.dawn.community.fragment.person_info.ChangePhoneFragment"
+        android:label="ChangePhoneFragment"
+        tools:layout="@layout/fragment_change_phone"/>
+
+    <fragment
+        android:id="@+id/bindSocialAccountFragment"
+        android:name="com.dawn.community.fragment.person_info.BindSocialAccountFragment"
+        android:label="BindSocialAccountFragment"
+        tools:layout="@layout/fragment_bind_social_account"/>
+
+    <fragment
+        android:id="@+id/changeEmailFragment"
+        android:name="com.dawn.community.fragment.person_info.ChangeEmailFragment"
+        android:label="ChangeEmailFragment"
+        tools:layout="@layout/fragment_change_email"/>
+
+    <fragment
+        android:id="@+id/changeDescriptionFragment"
+        android:name="com.dawn.community.fragment.person_info.ChangeDescriptionFragment"
+        android:label="ChangeDescriptionFragment"
+        tools:layout="@layout/fragment_change_description"/>
+
+
+</navigation>

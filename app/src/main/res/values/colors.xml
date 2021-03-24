@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--基准主题颜色-->
-    <color name="colorPrimary">#673AB7</color>
+    <!--<color name="colorPrimary">#673AB7</color>
     <color name="colorPrimaryDark">#5E35B1</color>
+    <color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">#ff7a15</color>
+    <color name="colorPrimaryDark">#ff7a15</color>
     <color name="colorAccent">#FF4081</color>
 
     <!--主题颜色-->
@@ -19,6 +22,11 @@
     <color name="gray7">#999999</color>
     <color name="gray8">#D9D9D9</color>
     <color name="gray9">#DBDFE0</color>
+    <color name="gray10">#e2e2e2</color>
+    <color name="gray11">#b4b4b4</color>
+
+    <!--微信标准色-->
+    <color name="wechat_gray">#ededed</color>
 
     <!--黑色-->
     <color name="black0">#000000</color>
@@ -31,6 +39,9 @@
     <color name="color_333">#333333</color>
     <color name="color_666">#666666</color>
     <color name="color_999">#999999</color>
+
+    <!--change 字体颜色-->
+    <color name="change_tip">#9FA8DF</color>
 
 
     <!--分割线 ==================================================-->

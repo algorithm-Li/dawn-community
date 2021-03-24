@@ -9,10 +9,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.dawn.community.adapter.utils_adapter.ViewPagerAdapter;
+import com.dawn.community.fragment.MineFragment;
 import com.dawn.community.fragment.discover.DiscoverFragment;
 import com.dawn.community.fragment.DistinguishFragment;
-import com.dawn.community.fragment.MineFragment;
 import com.dawn.community.fragment.social.SocialFragment;
+import com.dawn.community.utils.common.StatusBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomnavigation.LabelVisibilityMode;
 
@@ -31,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //启用沉浸式布局，白底黑字,需在setContentView前调用
+        StatusBar.fitSystemBar(this);
         setContentView(R.layout.activity_main);
         initView();
         initEvent();
@@ -76,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         myFragmentList.add(new SocialFragment());
         myFragmentList.add(new DiscoverFragment());
         myFragmentList.add(new MineFragment());
+        //myFragmentList.add(new MineFragment());
         //ViewPager加载适配器
         mainViewPager = findViewById(R.id.main_viewPager);
         mainViewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager(),myFragmentList));

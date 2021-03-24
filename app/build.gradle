@@ -51,7 +51,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.1.0"
 
     /*material design*/
-    implementation "com.google.android.material:material:1.2.1"
+    implementation "com.google.android.material:material:1.1.0"
 
     /*navigation JetPack组件*/
     def nav_version = "2.3.3"
@@ -77,6 +77,24 @@ dependencies {
 
     //圆形图片库
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //SmartRefresh 刷新框架 【GitHub】：https://github.com/scwang90/SmartRefreshLayout
+    //核心必须依赖
+    implementation  'com.scwang.smart:refresh-layout-kernel:2.0.3'
+    //经典刷新头
+    implementation  'com.scwang.smart:refresh-header-classics:2.0.3'
+    //雷达刷新头
+    implementation  'com.scwang.smart:refresh-header-radar:2.0.3'
+    //虚拟刷新头
+    implementation  'com.scwang.smart:refresh-header-falsify:2.0.3'
+    //谷歌刷新头
+    implementation  'com.scwang.smart:refresh-header-material:2.0.3'
+    //二级刷新头
+    implementation  'com.scwang.smart:refresh-header-two-level:2.0.3'
+    //球脉冲加载
+    implementation  'com.scwang.smart:refresh-footer-ball:2.0.3'
+    //经典加载
+    implementation  'com.scwang.smart:refresh-footer-classics:2.0.3'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
