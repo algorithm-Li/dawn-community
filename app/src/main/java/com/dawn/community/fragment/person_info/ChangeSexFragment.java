@@ -5,7 +5,7 @@ import android.util.Log;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangeSexBinding;
-import com.dawn.community.viewmodel.fagment.person_info.ChangeSexViewModel;
+import com.dawn.community.viewmodel.fragment.person_info.ChangeSexViewModel;
 
 public class ChangeSexFragment extends BaseVmFragment<FragmentChangeSexBinding, ChangeSexViewModel> {
 

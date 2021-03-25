@@ -36,7 +36,7 @@
     <string name="description">description</string>
 
     <!--ImageView描述 待办，待补充-->
-    <string name="TODO">描述待补充</string>
+    <string name="TODO">描述待补充，盲人模式</string>
 
     <!--personInfo Fragment页面字符串内容-->
     <string name="person_info_title">我的资料</string>
@@ -65,5 +65,8 @@
     <string name="change_name_title">更换昵称</string>
     <string name="change_name_hint_text">请输入新的昵称</string>
     <string name="change_name_tip_text">好名字可以让你的朋友更容易记住你</string>
+
+    <!--menu 菜单字符串-->
+    <string name="bar_menu_history_video_clear_text">清除</string>
 
 </resources>

@@ -5,7 +5,7 @@ import android.util.Log;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentContactsBinding;
-import com.dawn.community.viewmodel.fagment.discover.ContactsViewModel;
+import com.dawn.community.viewmodel.fragment.social.ContactsViewModel;
 
 public class ContactsFragment extends BaseVmFragment<FragmentContactsBinding, ContactsViewModel> {
 

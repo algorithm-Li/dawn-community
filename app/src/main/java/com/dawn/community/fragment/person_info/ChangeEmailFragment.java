@@ -5,7 +5,7 @@ import android.util.Log;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangeEmailBinding;
-import com.dawn.community.viewmodel.fagment.person_info.ChangeEmailViewModel;
+import com.dawn.community.viewmodel.fragment.person_info.ChangeEmailViewModel;
 
 public class ChangeEmailFragment extends BaseVmFragment<FragmentChangeEmailBinding, ChangeEmailViewModel> {
 

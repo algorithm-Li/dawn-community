@@ -9,7 +9,7 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.bean.tabs.DiscoverTab;
 import com.dawn.community.databinding.FragmentDiscoverBinding;
 import com.dawn.community.utils.AppConfig;
-import com.dawn.community.viewmodel.fagment.social.DiscoverViewModel;
+import com.dawn.community.viewmodel.fragment.discover.DiscoverViewModel;
 
 import java.util.ArrayList;
 

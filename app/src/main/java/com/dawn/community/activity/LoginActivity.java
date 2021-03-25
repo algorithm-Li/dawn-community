@@ -1,20 +1,31 @@
 package com.dawn.community.activity;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import androidx.annotation.Nullable;
+
 import com.dawn.community.CommunityApplication;
+import com.dawn.community.MainActivity;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmActivity;
-import com.dawn.community.bean.history.HistoryItem;
 import com.dawn.community.databinding.ActivityLoginBinding;
 import com.dawn.community.utils.MyAnimations;
+import com.dawn.community.utils.common.StatusBar;
 import com.dawn.community.viewmodel.activity.LoginViewModel;
 
 public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginViewModel> {
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        //启用沉浸式布局，白底黑字,需在setContentView前调用
+        StatusBar.fitSystemBar(this);
+        super.onCreate(savedInstanceState);
+    }
 
     @Override
     protected void initView() {
@@ -32,6 +43,12 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(CommunityApplication.getContext(),SignUpActivity.class));
+            }
+        });
+        viewDataBinding.passLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CommunityApplication.getContext(), MainActivity.class));
             }
         });
     }

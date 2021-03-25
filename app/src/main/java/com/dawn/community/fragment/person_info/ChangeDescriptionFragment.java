@@ -5,7 +5,7 @@ import android.util.Log;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangeDescriptionBinding;
-import com.dawn.community.viewmodel.fagment.person_info.ChangeDescriptionViewModel;
+import com.dawn.community.viewmodel.fragment.person_info.ChangeDescriptionViewModel;
 
 public class ChangeDescriptionFragment extends BaseVmFragment<FragmentChangeDescriptionBinding, ChangeDescriptionViewModel> {
 

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="vm"
-            type="com.dawn.community.viewmodel.fagment.discover.SocialViewModel" />
+            type="com.dawn.community.viewmodel.fragment.social.SocialViewModel" />
     </data>
 
     <LinearLayout

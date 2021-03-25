@@ -5,7 +5,7 @@ import android.util.Log;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentRecommendBinding;
-import com.dawn.community.viewmodel.fagment.social.RecommendViewModel;
+import com.dawn.community.viewmodel.fragment.discover.RecommendViewModel;
 
 public class RecommendFragment extends BaseVmFragment<FragmentRecommendBinding, RecommendViewModel> {
 

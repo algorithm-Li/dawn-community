@@ -5,10 +5,12 @@ import android.util.Log;
 import android.view.View;
 
 import com.dawn.community.R;
+import com.dawn.community.activity.HistoryActivity;
+import com.dawn.community.activity.MessageCenterActivity;
 import com.dawn.community.activity.PersonInfoActivity;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentMineBinding;
-import com.dawn.community.viewmodel.fagment.MineViewModel;
+import com.dawn.community.viewmodel.fragment.MineViewModel;
 
 public class MineFragment extends BaseVmFragment<FragmentMineBinding, MineViewModel> implements View.OnClickListener {
 
@@ -26,6 +28,8 @@ public class MineFragment extends BaseVmFragment<FragmentMineBinding, MineViewMo
         viewDataBinding.goDetail.setOnClickListener(this);
         viewDataBinding.userName.setOnClickListener(this);
         viewDataBinding.description.setOnClickListener(this);
+        viewDataBinding.userHistory.setOnClickListener(this);
+        viewDataBinding.relMessageCenter.setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +53,11 @@ public class MineFragment extends BaseVmFragment<FragmentMineBinding, MineViewMo
             //剩下的补充
             case R.id.user_image:
                 break;
+            case R.id.user_history:
+                startActivity(new Intent(getContext(), HistoryActivity.class));
+                break;
+            case R.id.rel_message_center:
+                startActivity(new Intent(getContext(), MessageCenterActivity.class));
             default:
                 break;
         }

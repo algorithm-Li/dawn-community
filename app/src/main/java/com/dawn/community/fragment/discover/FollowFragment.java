@@ -5,7 +5,7 @@ import android.util.Log;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentFollowBinding;
-import com.dawn.community.viewmodel.fagment.social.FollowViewModel;
+import com.dawn.community.viewmodel.fragment.discover.FollowViewModel;
 
 public class FollowFragment extends BaseVmFragment<FragmentFollowBinding, FollowViewModel> {
 

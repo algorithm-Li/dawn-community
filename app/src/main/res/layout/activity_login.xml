@@ -12,7 +12,9 @@
         android:layout_height="match_parent"
         android:id="@+id/constParent"
         android:background="@android:color/white"
-        tools:context=".activity.LoginActivity">
+        tools:context=".activity.LoginActivity"
+        android:fitsSystemWindows="true">
+
 
         <RelativeLayout
             android:id="@+id/relHeader"
@@ -92,6 +94,7 @@
             app:layout_constraintTop_toBottomOf="@+id/viewBubble1" />
 
         <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -298,6 +301,18 @@
                             android:tint="@color/colorFacebook" />
 
                     </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/pass_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="跳过"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:textSize="@dimen/font_size_16"
+                        android:textColor="@color/colorPrimary"
+                        android:clickable="true"
+                        android:focusable="true" />
 
                 </LinearLayout>
 

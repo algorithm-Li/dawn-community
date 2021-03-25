@@ -13,9 +13,8 @@ import com.dawn.community.R;
 /**
  * @说明： 自定义带删除按钮的EditText
  */
-public class MyEditText extends androidx.appcompat.widget.AppCompatEditText implements View.OnFocusChangeListener,
-        TextWatcher
-{
+public class MyEditText extends androidx.appcompat.widget.AppCompatEditText implements View.OnFocusChangeListener, TextWatcher {
+
     //EditText右侧的删除按钮
     private Drawable mClearDrawable;
     private boolean hasFoucs;

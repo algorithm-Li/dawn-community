@@ -232,6 +232,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+                    android:id="@+id/rel_message_center"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_60">
 

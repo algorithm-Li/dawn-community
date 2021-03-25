@@ -1,5 +1,8 @@
 package com.dawn.community.bean.history;
 
+/**
+ * 模拟数据，需根据实际需求修改
+ */
 public class HistoryItem {
 
     //属性字段进行补充

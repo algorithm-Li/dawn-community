@@ -5,7 +5,7 @@ import android.util.Log;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentBindSocialAccountBinding;
-import com.dawn.community.viewmodel.fagment.person_info.BindSoicalAccountViewModel;
+import com.dawn.community.viewmodel.fragment.person_info.BindSoicalAccountViewModel;
 
 public class BindSocialAccountFragment extends BaseVmFragment<FragmentBindSocialAccountBinding, BindSoicalAccountViewModel> {
 

@@ -17,14 +17,14 @@ public abstract class BaseVmActivity<T extends ViewDataBinding, VM extends ViewM
         super.onCreate(savedInstanceState);
         //创建ViewModel
         initViewModel();
+        //观察数据变化 --> 更新UI
+        observerData();
         //初始化页面
         initView();
         //设置相关的事件
         initEvent();
         //载入动画
         initAnimation();
-        //观察数据变化 --> 更新UI
-        observerData();
         //开始去加载数据
         startLoadData();
     }

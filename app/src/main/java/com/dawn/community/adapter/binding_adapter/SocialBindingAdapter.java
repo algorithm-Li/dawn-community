@@ -14,7 +14,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.dawn.community.R;
 import com.dawn.community.bean.tabs.SocialTab;
 import com.dawn.community.fragment.social.ContactsFragment;
-import com.dawn.community.fragment.social.MessageFragment;
+import com.dawn.community.fragment.social.message.MessageFragment;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 

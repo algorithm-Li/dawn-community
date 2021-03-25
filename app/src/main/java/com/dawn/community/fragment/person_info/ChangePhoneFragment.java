@@ -5,7 +5,7 @@ import android.util.Log;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangePhoneBinding;
-import com.dawn.community.viewmodel.fagment.person_info.ChangePhoneViewModel;
+import com.dawn.community.viewmodel.fragment.person_info.ChangePhoneViewModel;
 
 public class ChangePhoneFragment extends BaseVmFragment<FragmentChangePhoneBinding, ChangePhoneViewModel> {
 

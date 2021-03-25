@@ -27,6 +27,13 @@
         <item name="android:windowAllowReturnTransitionOverlap">false</item>
     </style>
 
+    <!-- 设置Toolbar菜单文字的大小  -->
+    <style name="ToolbarTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:actionMenuTextColor">#000000</item> <!--颜色-->
+        <item name="android:textSize">@dimen/font_size_14</item> <!--字体大小-->
+        <item name="colorControlNormal">#000000</item>
+    </style>
+
     <!--Text 基本样式，继承 TextAppearance.AppCompat-->
     <style name="MyTextRegular" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/rubik_regular</item>
