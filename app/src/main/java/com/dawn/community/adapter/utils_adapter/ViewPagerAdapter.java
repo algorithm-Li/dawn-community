@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import java.util.ArrayList;
 
 /**
+ * @author Algorithm
  * ViewPager的适配器
  */
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {

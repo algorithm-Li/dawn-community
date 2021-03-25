@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentBindSocialAccountBinding;
 import com.dawn.community.viewmodel.fragment.person_info.BindSoicalAccountViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class BindSocialAccountFragment extends BaseVmFragment<FragmentBindSocialAccountBinding, BindSoicalAccountViewModel> {
 
     private static final String TAG = "BSAFragment";

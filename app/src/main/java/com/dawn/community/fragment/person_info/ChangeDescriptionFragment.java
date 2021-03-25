@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangeDescriptionBinding;
 import com.dawn.community.viewmodel.fragment.person_info.ChangeDescriptionViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class ChangeDescriptionFragment extends BaseVmFragment<FragmentChangeDescriptionBinding, ChangeDescriptionViewModel> {
 
     private static final String TAG = "CDescriptionFragment";

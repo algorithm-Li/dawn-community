@@ -21,6 +21,7 @@ android {
         }
     }
 
+    //支持Lambda表达式
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -95,6 +96,12 @@ dependencies {
     implementation  'com.scwang.smart:refresh-footer-ball:2.0.3'
     //经典加载
     implementation  'com.scwang.smart:refresh-footer-classics:2.0.3'
+
+    //右侧字母索引的导航条 AnimSideBar 【GitHub】 https://github.com/AlexLiuSheng/AnimSideBar
+    implementation 'com.github.AlexLiuSheng:AnimSideBar:1.0.0'
+
+    //汉字转拼音
+    implementation 'com.belerweb:pinyin4j:2.5.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

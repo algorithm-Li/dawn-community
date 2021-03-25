@@ -9,13 +9,14 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.dawn.community.R;
-import com.dawn.community.bean.history.HistoryItem;
 import com.dawn.community.bean.message.PrivateMessageItem;
-import com.dawn.community.databinding.ItemHistoryBinding;
 import com.dawn.community.databinding.ItemPrivateMessageBinding;
 
 import java.util.ArrayList;
 
+/**
+ * @author Algorithm
+ */
 public class PrivateMessageAdapter extends RecyclerView.Adapter<PrivateMessageAdapter.InnerHolder> {
 
     ArrayList<PrivateMessageItem> privateMessageItemArrayList = new ArrayList<>();

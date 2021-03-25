@@ -3,6 +3,7 @@ package com.dawn.community.bean.tabs;
 import java.util.List;
 
 /**
+ * @author Algorithm
  * 社交页面的 TabLayout 的 Tab 子项数据类
  */
 public class SocialTab {

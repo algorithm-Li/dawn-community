@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentDistinguishBinding;
 import com.dawn.community.viewmodel.fragment.DistinguishViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class DistinguishFragment extends BaseVmFragment<FragmentDistinguishBinding, DistinguishViewModel> {
 
     private static final String TAG = "DistinguishFragment";

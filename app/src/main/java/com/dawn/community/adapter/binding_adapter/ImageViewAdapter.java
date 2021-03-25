@@ -6,6 +6,9 @@ import androidx.databinding.BindingAdapter;
 
 import com.bumptech.glide.Glide;
 
+/**
+ * @author Algorithm
+ */
 public class ImageViewAdapter {
 
     @BindingAdapter("imageUrl")

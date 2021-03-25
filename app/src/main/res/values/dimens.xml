@@ -75,6 +75,7 @@
 
     <!--font sp size-->
     <dimen name="font_size_8">8sp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
     <dimen name="font_size_11">11sp</dimen>
     <dimen name="font_size_12">12sp</dimen>
     <dimen name="font_size_14">14sp</dimen>

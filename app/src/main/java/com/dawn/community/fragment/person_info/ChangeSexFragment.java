@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangeSexBinding;
 import com.dawn.community.viewmodel.fragment.person_info.ChangeSexViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class ChangeSexFragment extends BaseVmFragment<FragmentChangeSexBinding, ChangeSexViewModel> {
 
     private static final String TAG = "ChangeSexFragment";

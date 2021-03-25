@@ -8,6 +8,9 @@ import com.dawn.community.bean.history.HistoryItem;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * @author Algorithm
+ */
 public class HistoryRepository {
 
     static Random random = new Random(25);

@@ -27,6 +27,7 @@
 
     <!--微信标准色-->
     <color name="wechat_gray">#ededed</color>
+    <color name="wechat_gray_2">#818181</color>
 
     <!--黑色-->
     <color name="black0">#000000</color>

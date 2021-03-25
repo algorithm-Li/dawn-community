@@ -1,6 +1,7 @@
 package com.dawn.community.bean.history;
 
 /**
+ * @author Algorithm
  * 模拟数据，需根据实际需求修改
  */
 public class HistoryItem {

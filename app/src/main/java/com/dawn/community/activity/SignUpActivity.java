@@ -10,6 +10,9 @@ import com.dawn.community.databinding.ActivitySignUpBinding;
 import com.dawn.community.utils.MyAnimations;
 import com.dawn.community.viewmodel.activity.SignUpViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class SignUpActivity extends BaseVmActivity<ActivitySignUpBinding, SignUpViewModel> {
 
     @Override

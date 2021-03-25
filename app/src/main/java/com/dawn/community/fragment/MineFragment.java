@@ -12,6 +12,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentMineBinding;
 import com.dawn.community.viewmodel.fragment.MineViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class MineFragment extends BaseVmFragment<FragmentMineBinding, MineViewModel> implements View.OnClickListener {
 
     private static final String TAG = "MineFragment";

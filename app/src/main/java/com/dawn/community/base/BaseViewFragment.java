@@ -11,6 +11,9 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
 
+/**
+ * @author Algorithm
+ */
 public abstract class BaseViewFragment<T extends ViewDataBinding> extends Fragment {
 
     //数据绑定的获取对象

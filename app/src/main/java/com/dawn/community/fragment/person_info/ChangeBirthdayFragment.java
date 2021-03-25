@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangeBirthdayBinding;
 import com.dawn.community.viewmodel.fragment.person_info.ChangeBirthdayViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class ChangeBirthdayFragment extends BaseVmFragment<FragmentChangeBirthdayBinding, ChangeBirthdayViewModel> {
 
     private static final String TAG = "ChangeBirthdayFragment";

@@ -8,6 +8,9 @@ import androidx.lifecycle.ViewModel;
 
 import com.dawn.community.bean.tabs.SocialTab;
 
+/**
+ * @author Algorithm
+ */
 public class SocialViewModel extends ViewModel {
 
     public final ObservableField<Fragment> fragment = new ObservableField<>();

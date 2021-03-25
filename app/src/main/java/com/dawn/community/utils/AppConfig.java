@@ -15,6 +15,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 /**
+ * @author Algorithm
  * App基本配置信息
  */
 public class AppConfig {

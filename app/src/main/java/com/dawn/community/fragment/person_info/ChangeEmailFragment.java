@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangeEmailBinding;
 import com.dawn.community.viewmodel.fragment.person_info.ChangeEmailViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class ChangeEmailFragment extends BaseVmFragment<FragmentChangeEmailBinding, ChangeEmailViewModel> {
 
     private static final String TAG = "ChangeEmailFragment";

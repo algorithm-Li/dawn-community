@@ -18,6 +18,9 @@ import com.dawn.community.utils.MyAnimations;
 import com.dawn.community.utils.common.StatusBar;
 import com.dawn.community.viewmodel.activity.LoginViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginViewModel> {
 
     @Override

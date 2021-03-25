@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentCommentBinding;
 import com.dawn.community.viewmodel.fragment.social.message.CommentViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class CommentFragment extends BaseVmFragment<FragmentCommentBinding, CommentViewModel> {
 
     private static final String TAG = "CommentFragment";

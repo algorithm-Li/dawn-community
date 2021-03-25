@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentFollowBinding;
 import com.dawn.community.viewmodel.fragment.discover.FollowViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class FollowFragment extends BaseVmFragment<FragmentFollowBinding, FollowViewModel> {
 
     private static final String TAG = "FollowFragment";

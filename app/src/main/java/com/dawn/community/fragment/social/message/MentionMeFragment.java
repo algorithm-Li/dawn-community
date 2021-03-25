@@ -5,10 +5,11 @@ import android.util.Log;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentMentionMeBinding;
-import com.dawn.community.databinding.FragmentPrivateMessageBinding;
 import com.dawn.community.viewmodel.fragment.social.message.MentionMeViewModel;
-import com.dawn.community.viewmodel.fragment.social.message.MessageViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class MentionMeFragment extends BaseVmFragment<FragmentMentionMeBinding, MentionMeViewModel> {
 
     private static final String TAG = "MentionMeFragment";

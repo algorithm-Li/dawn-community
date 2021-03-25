@@ -7,6 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 
+/**
+ * @author Algorithm
+ * @param <T> ViewDataBinding的泛型
+ */
 public abstract class BaseViewActivity<T extends ViewDataBinding> extends AppCompatActivity {
 
     //数据绑定的获取对象

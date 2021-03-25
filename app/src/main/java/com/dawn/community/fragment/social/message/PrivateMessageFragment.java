@@ -21,6 +21,9 @@ import com.dawn.community.viewmodel.fragment.social.message.PrivateMessageViewMo
 
 import java.util.ArrayList;
 
+/**
+ * @author Algorithm
+ */
 public class PrivateMessageFragment extends BaseVmFragment<FragmentPrivateMessageBinding, PrivateMessageViewModel> {
 
     private static final String TAG = "PrivateMessageFragment";

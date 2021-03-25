@@ -13,6 +13,9 @@ import com.dawn.community.viewmodel.fragment.social.SocialViewModel;
 
 import java.util.ArrayList;
 
+/**
+ * @author Algorithm
+ */
 public class SocialFragment extends BaseVmFragment<FragmentSocialBinding, SocialViewModel> {
 
     private static final String TAG = "SocialFragment";

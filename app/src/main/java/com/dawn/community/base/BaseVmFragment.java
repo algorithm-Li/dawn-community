@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 /**
+ * @author Algorithm
  * 带ViewModel的基类
  * 还不知道具体的布局和Binding以及ViewModel
  */

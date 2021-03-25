@@ -11,7 +11,7 @@ public class StatusBar {
     /**
      * 6.0级以上的沉浸式布局
      *
-     * @param activity
+     * @param activity 页面
      */
     public static void fitSystemBar(Activity activity) {
 

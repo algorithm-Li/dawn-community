@@ -25,6 +25,9 @@ import com.dawn.community.viewmodel.activity.HistoryViewModel;
 
 import java.util.ArrayList;
 
+/**
+ * @author Algorithm
+ */
 public class HistoryActivity extends BaseVmActivity<ActivityHistoryBinding, HistoryViewModel>{
 
     HistoryListAdapter historyListAdapter = new HistoryListAdapter();

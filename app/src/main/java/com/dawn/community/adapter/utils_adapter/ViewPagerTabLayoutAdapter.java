@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import java.util.ArrayList;
 
 /**
+ * @author Algorithm
  * ViewPager 和 TabLayout 结合的 Adapter
  */
 public class ViewPagerTabLayoutAdapter extends FragmentStatePagerAdapter {

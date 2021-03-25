@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangePhoneBinding;
 import com.dawn.community.viewmodel.fragment.person_info.ChangePhoneViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class ChangePhoneFragment extends BaseVmFragment<FragmentChangePhoneBinding, ChangePhoneViewModel> {
 
     private static final String TAG = "ChangePhoneFragment";

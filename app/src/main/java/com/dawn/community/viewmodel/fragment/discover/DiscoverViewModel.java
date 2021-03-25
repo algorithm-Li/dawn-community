@@ -8,6 +8,9 @@ import androidx.lifecycle.ViewModel;
 
 import com.dawn.community.bean.tabs.DiscoverTab;
 
+/**
+ * @author Algorithm
+ */
 public class DiscoverViewModel extends ViewModel {
 
     public final ObservableField<Fragment> fragment = new ObservableField<>();

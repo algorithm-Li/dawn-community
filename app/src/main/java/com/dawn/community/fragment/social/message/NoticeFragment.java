@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentNoticeBinding;
 import com.dawn.community.viewmodel.fragment.social.message.NoticeViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class NoticeFragment extends BaseVmFragment<FragmentNoticeBinding, NoticeViewModel> {
 
     private static final String TAG = "NoticeFragment";

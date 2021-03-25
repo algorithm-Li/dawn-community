@@ -7,6 +7,9 @@ import androidx.databinding.ViewDataBinding;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
+/**
+ * @author Algorithm
+ */
 public abstract class BaseVmActivity<T extends ViewDataBinding, VM extends ViewModel> extends BaseViewActivity<T> {
 
     //ViewModel对象，泛型

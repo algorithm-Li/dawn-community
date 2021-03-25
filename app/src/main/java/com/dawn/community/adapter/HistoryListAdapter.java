@@ -14,6 +14,9 @@ import com.dawn.community.databinding.ItemHistoryBinding;
 
 import java.util.ArrayList;
 
+/**
+ * @author Algorithm
+ */
 public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.InnerHolder> {
 
     ArrayList<HistoryItem> historyItemArrayList = new ArrayList<>();

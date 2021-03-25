@@ -10,6 +10,9 @@ import com.dawn.community.databinding.ActivityPersonInfoBinding;
 import com.dawn.community.utils.common.StatusBar;
 import com.dawn.community.viewmodel.activity.PersonInfoViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class PersonInfoActivity extends BaseVmActivity<ActivityPersonInfoBinding, PersonInfoViewModel>{
 
     @Override

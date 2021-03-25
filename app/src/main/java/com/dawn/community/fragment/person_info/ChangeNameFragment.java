@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentChangeNameBinding;
 import com.dawn.community.viewmodel.fragment.person_info.ChangeNameViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class ChangeNameFragment extends BaseVmFragment<FragmentChangeNameBinding, ChangeNameViewModel> {
 
     private static final String TAG = "ChangeNameFragment";

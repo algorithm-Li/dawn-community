@@ -10,6 +10,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import java.util.ArrayList;
 
 /**
+ * @author Algorithm
  * ViewPager2的适配器
  * 建议使用
  */

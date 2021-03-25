@@ -11,6 +11,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentPersonInfoBinding;
 import com.dawn.community.viewmodel.activity.PersonInfoViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class PersonInfoFragment extends BaseVmFragment<FragmentPersonInfoBinding, PersonInfoViewModel> implements View.OnClickListener {
 
     private static final String TAG = "PersonInfoFragment";

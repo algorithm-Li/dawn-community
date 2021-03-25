@@ -21,7 +21,7 @@
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/social_tabLayout"
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/dp_300"
                 android:layout_height="@dimen/dp_45"
                 app:tabGravity="center"
                 bindSocialFragment="@{vm.fragment}"
@@ -48,6 +48,14 @@
                 app:tabSelectedTextColor="@color/black0"
                 app:tabTextColor="@color/gray1"
                 app:tabTextAppearance="@android:style/TextAppearance.Holo.Large" />-->
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/search_256px"/>
 
         </RelativeLayout>
 

@@ -12,10 +12,14 @@ import com.dawn.community.repository.HistoryRepository;
 
 import java.util.ArrayList;
 
+/**
+ * @author Algorithm
+ */
 public class HistoryViewModel extends ViewModel {
 
     private MutableLiveData<User> userMutableLiveData = new MutableLiveData<>();
 
+    //转化成可公开的数据，只要userMutableLiveData数据一遍，例如执行了下面的setUser函数，就会调用下面重写的apply函数，去仓库获取数据
     public LiveData<ArrayList<HistoryItem>> historyItemLiveData = Transformations.switchMap(userMutableLiveData,
             new Function<User, LiveData<ArrayList<HistoryItem>>>() {
         @Override

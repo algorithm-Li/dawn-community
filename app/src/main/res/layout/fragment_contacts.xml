@@ -7,7 +7,7 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!--<androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -22,5 +22,35 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="联系人页面" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray5">
+
+        <!--<ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rl_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.dawn.community.widget.SideBar
+            android:id="@+id/side_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
 </layout>

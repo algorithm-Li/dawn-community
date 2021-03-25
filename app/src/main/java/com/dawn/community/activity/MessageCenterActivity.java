@@ -19,6 +19,9 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.ArrayList;
 
+/**
+ * @author Algorithm
+ */
 public class MessageCenterActivity extends BaseVmActivity<ActivityMessageCenterBinding, MessageCenterViewModel>{
 
     //Fragment数组

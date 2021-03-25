@@ -19,6 +19,9 @@ import com.google.android.material.bottomnavigation.LabelVisibilityMode;
 
 import java.util.ArrayList;
 
+/**
+ * @author Algorithm
+ */
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView mBottomNavigationView;

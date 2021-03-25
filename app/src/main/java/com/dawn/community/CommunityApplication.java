@@ -5,6 +5,7 @@ import android.app.Application;
 import android.content.Context;
 
 /**
+ * @author Algorithm
  * 全局Application类
  */
 public class CommunityApplication extends Application {

@@ -13,6 +13,9 @@ import com.dawn.community.viewmodel.fragment.discover.DiscoverViewModel;
 
 import java.util.ArrayList;
 
+/**
+ * @author Algorithm
+ */
 public class DiscoverFragment extends BaseVmFragment<FragmentDiscoverBinding, DiscoverViewModel> {
 
     private static final String TAG = "DiscoverFragment";

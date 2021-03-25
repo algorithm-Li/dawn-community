@@ -7,6 +7,9 @@ import com.dawn.community.base.BaseVmFragment;
 import com.dawn.community.databinding.FragmentRecommendBinding;
 import com.dawn.community.viewmodel.fragment.discover.RecommendViewModel;
 
+/**
+ * @author Algorithm
+ */
 public class RecommendFragment extends BaseVmFragment<FragmentRecommendBinding, RecommendViewModel> {
 
     private static final String TAG = "RecommendFragment";
