@@ -66,7 +66,7 @@
 
         </RelativeLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.dawn.community.widget.RecyclerViewAtViewPager2
             android:id="@+id/inner_recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
             imageArrayList="@{itemData.pictureItemArrayList}"
             fragmentContext="@{context}">
 
-        </androidx.recyclerview.widget.RecyclerView>
+        </com.dawn.community.widget.RecyclerViewAtViewPager2>
 
     </LinearLayout>
 

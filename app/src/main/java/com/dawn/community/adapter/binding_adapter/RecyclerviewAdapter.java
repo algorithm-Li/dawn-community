@@ -2,18 +2,16 @@ package com.dawn.community.adapter.binding_adapter;
 
 import android.content.Context;
 import android.util.Log;
-import android.widget.ImageView;
 
 import androidx.databinding.BindingAdapter;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.dawn.community.R;
 import com.dawn.community.adapter.PictureListAdapter;
 import com.dawn.community.adapter.utils_adapter.FollowPictureListAdapter;
 import com.dawn.community.bean.discover.PictureItem;
+import com.dawn.community.widget.RecyclerViewAtViewPager2;
 
 import java.util.ArrayList;
 
@@ -54,7 +52,7 @@ public class RecyclerviewAdapter {
      * @param context 上下文
      */
     @BindingAdapter(value = {"imageArrayList","fragmentContext"})
-    public static void pictureList(RecyclerView recyclerView, ArrayList<PictureItem> pictureItemArrayList, Context context){
+    public static void pictureList(RecyclerViewAtViewPager2 recyclerView, ArrayList<PictureItem> pictureItemArrayList, Context context){
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(context);
         //设置方向为水平方向
