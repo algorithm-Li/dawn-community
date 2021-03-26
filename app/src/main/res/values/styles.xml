@@ -111,5 +111,87 @@
         <item name="android:background">@color/color_white</item>
     </style>
 
+    <style name="DynamicBase" parent="AppTheme2">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="DynamicBase.Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:textColor">@color/color_444</item>
+    </style>
+
+    <style name="DynamicBase.Label.Title">
+        <item name="android:textColor">@color/color_333</item>
+        <item name="android:textSize">@dimen/font_size_17</item>
+    </style>
+
+    <style name="DynamicBase.Label.Description">
+        <item name="android:gravity">top</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="DynamicBase.Division">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_0_5</item>
+        <item name="android:dividerHeight">@dimen/dp_0_5</item>
+        <item name="android:divider">@color/colorDivision</item>
+        <item name="android:background">@color/colorDivision</item>
+    </style>
+
+    <style name="DynamicBase.Label.Layout">
+        <item name="android:paddingTop">@dimen/dimenPaddingVertical</item>
+        <item name="android:paddingBottom">@dimen/dimenPaddingVertical</item>
+        <item name="android:paddingLeft">@dimen/dimenPaddingHorizontal</item>
+        <item name="android:paddingRight">@dimen/dimenPaddingHorizontal</item>
+    </style>
+
+    <style name="DynamicBase.CommonBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DynamicBase.CommonBar.Panel">
+        <item name="android:layout_marginTop">@dimen/dimenPaddingCommon</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="DynamicBase.CommonBar.Bar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">@dimen/dimenPaddingCommon</item>
+        <item name="android:paddingRight">@dimen/dimenPaddingCommon</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="DynamicBase.CommonBar.Content" parent="DynamicBase.Label">
+        <item name="android:singleLine">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/dimenPaddingCommon</item>
+        <item name="android:paddingBottom">@dimen/dimenPaddingCommon</item>
+        <item name="android:paddingLeft">@dimen/dimenPaddingDiminutive</item>
+        <item name="android:paddingRight">@dimen/dimenPaddingDiminutive</item>
+        <item name="android:drawablePadding">@dimen/dimenPaddingCommon</item>
+    </style>
+
+    <style name="DynamicBase.CommonBar.Content.Value">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DynamicBase.Toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
 
 </resources>

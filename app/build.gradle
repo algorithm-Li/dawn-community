@@ -106,6 +106,9 @@ dependencies {
     //button动画点击  【GitHub】 https://github.com/ChadCSong/ShineButton
     implementation 'com.sackcentury:shinebutton:1.0.0'
 
+    //一个扩展原生控件支持圆角矩形框背景的库,可以减少相关shape资源文件使用 【GitHub】 https://github.com/H07000223/FlycoRoundView
+    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

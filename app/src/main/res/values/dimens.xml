@@ -6,6 +6,7 @@
     <!-- dimen dp 标准-->
     <!--dp命名-->
     <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_0_5">0.5dp</dimen>
     <dimen name="dp_0_8">0.8dp</dimen>
     <dimen name="dp_1">1dp</dimen>
     <dimen name="dp_2">2dp</dimen>
@@ -54,10 +55,22 @@
     <dimen name="dp_450">450dp</dimen>
     <dimen name="dp_480">480dp</dimen>
     <dimen name="dp_500">500dp</dimen>
+    <dimen name="dp_670">670dp</dimen>
 
     <!--负值 dp 值-->
     <dimen name="minus_dp_15">-15dp</dimen>
     <dimen name="minus_dp_30">-30dp</dimen>
+    <dimen name="minus_dp_300">-300dp</dimen>
+
+    <!--SmartFreshLayout 展示边距-->
+    <dimen name="dimenPaddingMin">2.5dp</dimen>
+    <dimen name="dimenPaddingDiminutive">5dp</dimen>
+    <dimen name="dimenPaddingCommon">10dp</dimen>
+    <dimen name="dimenPaddingVertical">10dp</dimen>
+    <dimen name="dimenPaddingMiddle">12.5dp</dimen>
+    <dimen name="dimenPaddingHorizontal">15dp</dimen>
+    <dimen name="dimenPaddingBig">20dp</dimen>
+    <dimen name="dimenPaddingLarge">25dp</dimen>
 
     <!--dimen命名-->
     <dimen name="dimen_6">6dp</dimen>

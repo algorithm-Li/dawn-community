@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.dawn.community.R;
+import com.dawn.community.activity.DynamicActivity;
 import com.dawn.community.activity.HistoryActivity;
 import com.dawn.community.activity.MessageCenterActivity;
 import com.dawn.community.activity.PersonInfoActivity;
@@ -33,6 +34,7 @@ public class MineFragment extends BaseVmFragment<FragmentMineBinding, MineViewMo
         viewDataBinding.description.setOnClickListener(this);
         viewDataBinding.userHistory.setOnClickListener(this);
         viewDataBinding.relMessageCenter.setOnClickListener(this);
+        viewDataBinding.userFeed.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +63,10 @@ public class MineFragment extends BaseVmFragment<FragmentMineBinding, MineViewMo
                 break;
             case R.id.rel_message_center:
                 startActivity(new Intent(getContext(), MessageCenterActivity.class));
+                break;
+            case R.id.user_feed:
+                startActivity(new Intent(getContext(), DynamicActivity.class));
+                break;
             default:
                 break;
         }

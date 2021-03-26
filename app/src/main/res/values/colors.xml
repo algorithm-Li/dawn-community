@@ -38,7 +38,9 @@
     <!--常用颜色-->
     <color name="color_000">#000000</color>
     <color name="color_333">#333333</color>
+    <color name="color_444">#444444</color>
     <color name="color_666">#666666</color>
+    <color name="color_888">#888888</color>
     <color name="color_999">#999999</color>
 
     <!--change 字体颜色-->
@@ -68,5 +70,11 @@
     <color name="colorFacebookTransPressed">#7986CB</color>
 
     <!--分割线 ==================================================-->
+
+    <!--分割符标准色-->
+    <color name="colorDivision">#33aaaaaa</color>
+
+    <!--常用背景色-->
+    <color name="colorBackgroundDark">#f2f2f2</color>
 
 </resources>
