@@ -69,4 +69,7 @@
     <!--menu 菜单字符串-->
     <string name="bar_menu_history_video_clear_text">清除</string>
 
+    <!--Recommend item 字符串内容-->
+    <string name="see_number_text">%d 人围观</string>
+
 </resources>

@@ -29,7 +29,7 @@ public class PrivateMessageRepository {
             R.drawable.naeun_5,
             R.drawable.naeun_6};
 
-    static String [] contentArray = new String[]{
+    public final static String [] contentArray = new String[]{
             "Swag慢慢！根本停不下来的超中毒屋顶起舞GO Crazy！AIKI编舞（All Ready）",
             "你什么时候放下，什么时候就没有烦恼。",
             "没遇见你之前，我没想过结婚这事，遇见你之后，结婚这事我没想过别人。",

@@ -103,6 +103,9 @@ dependencies {
     //汉字转拼音
     implementation 'com.belerweb:pinyin4j:2.5.0'
 
+    //button动画点击  【GitHub】 https://github.com/ChadCSong/ShineButton
+    implementation 'com.sackcentury:shinebutton:1.0.0'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

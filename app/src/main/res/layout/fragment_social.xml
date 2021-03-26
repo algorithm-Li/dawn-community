@@ -55,7 +55,8 @@
                 android:layout_width="@dimen/dp_25"
                 android:layout_height="@dimen/dp_25"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/search_256px"/>
+                android:src="@drawable/search_256px"
+                android:contentDescription="@string/TODO" />
 
         </RelativeLayout>
 
