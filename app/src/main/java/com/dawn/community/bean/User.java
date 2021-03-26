@@ -1,4 +1,4 @@
-package com.dawn.community.bean.history;
+package com.dawn.community.bean;
 
 /**
  * @author Algorithm

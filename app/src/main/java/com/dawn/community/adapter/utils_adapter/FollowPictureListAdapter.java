@@ -1,4 +1,4 @@
-package com.dawn.community.adapter;
+package com.dawn.community.adapter.utils_adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,9 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.dawn.community.R;
 import com.dawn.community.bean.discover.PictureItem;
-import com.dawn.community.bean.discover.RecommendItem;
-import com.dawn.community.databinding.ItemPictureBinding;
-import com.dawn.community.databinding.ItemRecommendBinding;
+import com.dawn.community.databinding.ItemFollowPictureBinding;
 
 import java.util.ArrayList;
 
@@ -20,16 +18,17 @@ import java.util.ArrayList;
  * @author Algorithm
  * @Date: 2021/3/26/0026
  * @Time: 1:21
+ * FollowFragment 页面里的，一系列图片的加载器适配器
  */
-public class PictureListAdapter extends RecyclerView.Adapter<PictureListAdapter.InnerHolder>{
+public class FollowPictureListAdapter extends RecyclerView.Adapter<FollowPictureListAdapter.InnerHolder>{
 
     ArrayList<PictureItem> pictureItemArrayList = new ArrayList<>();
 
     @NonNull
     @Override
     public InnerHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ItemPictureBinding itemPictureBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_picture,parent,false);
-        return new InnerHolder(itemPictureBinding.getRoot(),itemPictureBinding);
+        ItemFollowPictureBinding itemFollowPictureBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_follow_picture,parent,false);
+        return new InnerHolder(itemFollowPictureBinding.getRoot(),itemFollowPictureBinding);
     }
 
     @Override
@@ -38,7 +37,7 @@ public class PictureListAdapter extends RecyclerView.Adapter<PictureListAdapter.
         PictureItem pictureItem = pictureItemArrayList.get(position);
         //绑定数据，向binding里设置数据
         //要有binding
-        holder.itemPictureBinding.setPictureItem(pictureItem);//拿到对应item的数据
+        holder.itemFollowPictureBinding.setPictureItem(pictureItem);//拿到对应item的数据
     }
 
     @Override
@@ -57,11 +56,11 @@ public class PictureListAdapter extends RecyclerView.Adapter<PictureListAdapter.
 
     static class InnerHolder extends RecyclerView.ViewHolder{
 
-        ItemPictureBinding itemPictureBinding;
+        ItemFollowPictureBinding itemFollowPictureBinding;
 
-        public InnerHolder(@NonNull View itemView, ItemPictureBinding itemBinding) {
+        public InnerHolder(@NonNull View itemView, ItemFollowPictureBinding itemBinding) {
             super(itemView);
-            this.itemPictureBinding = itemBinding;
+            this.itemFollowPictureBinding = itemBinding;
         }
     }
 }

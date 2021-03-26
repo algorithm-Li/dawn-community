@@ -7,7 +7,7 @@ import androidx.lifecycle.Transformations;
 import androidx.lifecycle.ViewModel;
 
 import com.dawn.community.bean.discover.RecommendItem;
-import com.dawn.community.bean.history.User;
+import com.dawn.community.bean.User;
 import com.dawn.community.repository.RecommendRepository;
 
 import java.util.ArrayList;

@@ -17,7 +17,7 @@ import com.dawn.community.R;
 import com.dawn.community.adapter.HistoryListAdapter;
 import com.dawn.community.base.BaseVmActivity;
 import com.dawn.community.bean.history.HistoryItem;
-import com.dawn.community.bean.history.User;
+import com.dawn.community.bean.User;
 import com.dawn.community.databinding.ActivityHistoryBinding;
 import com.dawn.community.utils.common.SizeUtils;
 import com.dawn.community.utils.common.StatusBar;

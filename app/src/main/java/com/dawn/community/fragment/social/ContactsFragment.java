@@ -13,7 +13,7 @@ import com.dawn.community.CommunityApplication;
 import com.dawn.community.R;
 import com.dawn.community.adapter.ContactsAdapter;
 import com.dawn.community.base.BaseVmFragment;
-import com.dawn.community.bean.history.User;
+import com.dawn.community.bean.User;
 import com.dawn.community.bean.message.ContactsItem;
 import com.dawn.community.databinding.FragmentContactsBinding;
 import com.dawn.community.utils.common.SizeUtils;

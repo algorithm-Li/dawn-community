@@ -1,5 +1,7 @@
 package com.dawn.community.bean.discover;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * @author Algorithm
  * @Date: 2021/3/25/0025
@@ -43,5 +45,15 @@ public class PictureItem {
 
     public void setVideoImage(int videoImage) {
         this.videoImage = videoImage;
+    }
+
+    @NotNull
+    @Override
+    public String toString() {
+        return "PictureItem{" +
+                "image=" + image +
+                ", isVideo=" + isVideo +
+                ", videoImage=" + videoImage +
+                '}';
     }
 }

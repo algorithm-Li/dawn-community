@@ -16,7 +16,7 @@ import java.util.Random;
  */
 public class RecommendRepository {
 
-    static int [] picArray = new int[]{
+    public final static int [] picArray = new int[]{
             R.drawable.naeun_1,
             R.drawable.naeun_2,
             R.drawable.naeun_3,

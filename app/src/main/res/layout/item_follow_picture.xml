@@ -9,8 +9,8 @@
     </data>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="10dp"
         app:cardCornerRadius="4dp">
@@ -23,12 +23,21 @@
                 android:id="@+id/picture"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/naeun_2"
+                android:src="@drawable/naeun_6"
                 android:scaleType="centerCrop"
                 android:clickable="true"
                 android:focusable="true"
-                android:contentDescription="@string/TODO"
-                imageUrl="@{pictureItem.image}"/>
+                imageUrl="@{pictureItem.video? pictureItem.videoImage :pictureItem.image}"/>
+
+            <ImageView
+                android:id="@+id/video"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                isVideo="@{pictureItem.video}"
+                android:background="@drawable/video"
+                android:visibility="visible" />
 
         </RelativeLayout>
 

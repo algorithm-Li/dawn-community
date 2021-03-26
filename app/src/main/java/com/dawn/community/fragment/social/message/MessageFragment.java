@@ -5,7 +5,6 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,7 +13,7 @@ import com.dawn.community.CommunityApplication;
 import com.dawn.community.R;
 import com.dawn.community.adapter.PrivateMessageAdapter;
 import com.dawn.community.base.BaseVmFragment;
-import com.dawn.community.bean.history.User;
+import com.dawn.community.bean.User;
 import com.dawn.community.bean.message.PrivateMessageItem;
 import com.dawn.community.databinding.FragmentMessageBinding;
 import com.dawn.community.utils.common.SizeUtils;
