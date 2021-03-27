@@ -3,6 +3,7 @@ package com.dawn.community.activity;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -54,6 +55,12 @@ public class ChatActivity extends BaseVmActivity<ActivityChatBinding, ChatViewMo
         viewDataBinding.listView.setAdapter(chatAdapter);
         viewDataBinding.listView.setScaleY(-1);
 
+    }
+
+    @Override
+    protected void initEvent() {
+        super.initEvent();
+
         viewDataBinding.refreshLayout.setEnableRefresh(false);
         viewDataBinding.refreshLayout.setEnableAutoLoadMore(true);
         viewDataBinding.refreshLayout.setEnableNestedScroll(false);
@@ -85,7 +92,23 @@ public class ChatActivity extends BaseVmActivity<ActivityChatBinding, ChatViewMo
                 }, 2000);
             }
         });
+    }
 
+    /**
+     * 菜单选中监听事件
+     * @param item 菜单项
+     * @return true
+     */
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+            case android.R.id.home:
+                finish();
+                break;
+            default:
+                break;
+        }
+        return true;
     }
 
     @Override
