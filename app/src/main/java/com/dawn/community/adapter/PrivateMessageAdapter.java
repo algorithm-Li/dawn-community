@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.dawn.community.binding_handler.CommonHandler;
 import com.dawn.community.R;
 import com.dawn.community.bean.message.PrivateMessageItem;
 import com.dawn.community.databinding.ItemPrivateMessageBinding;
@@ -37,6 +38,8 @@ public class PrivateMessageAdapter extends RecyclerView.Adapter<PrivateMessageAd
         //绑定数据，向binding里设置数据
         //要有binding
         holder.itemPrivateMessageBinding.setItemData(itemData);//拿到对应item的数据
+        holder.itemPrivateMessageBinding.setEventHandler(new CommonHandler());
+
     }
 
     @Override

@@ -72,4 +72,9 @@
     <!--Recommend item 字符串内容-->
     <string name="see_number_text">%d 人围观</string>
 
+    <!--activity_chat.xml字符串内容-->
+    <string name="fragment_practice_instant">Instant</string>
+    <string name="instant_message_input_hint">input message</string>
+    <string name="instant_message_send">Send</string>
+
 </resources>

@@ -25,7 +25,13 @@
         <!--是否覆盖执行，其实可以理解成是否同步执行还是顺序执行-->
         <item name="android:windowAllowEnterTransitionOverlap">false</item>
         <item name="android:windowAllowReturnTransitionOverlap">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
+
+    <!--AppBarLayout 风格-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <!--ToolBar 弹出的菜单项 主题 风格-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <!-- 设置Toolbar菜单文字的大小  -->
     <style name="ToolbarTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
@@ -129,6 +135,10 @@
         <item name="android:textSize">@dimen/font_size_17</item>
     </style>
 
+    <style name="DynamicBase.Label.Title.Small">
+        <item name="android:textSize">@dimen/font_size_16</item>
+    </style>
+
     <style name="DynamicBase.Label.Description">
         <item name="android:gravity">top</item>
         <item name="android:lineSpacingExtra">5dp</item>
@@ -192,6 +202,11 @@
         <item name="android:layout_height">?attr/actionBarSize</item>
         <item name="android:background">?attr/colorPrimary</item>
         <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="DynamicBase.Label.Assistant">
+        <item name="android:textColor">@color/color_888</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
     </style>
 
 </resources>

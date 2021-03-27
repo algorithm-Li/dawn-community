@@ -4,15 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
+        <variable
+            name="eventHandler"
+            type="com.dawn.community.binding_handler.CommonHandler" />
+
         <variable
             name="itemData"
             type="com.dawn.community.bean.message.PrivateMessageItem" />
+
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@color/color_white">
+        android:background="@color/color_white"
+        android:onClick="@{eventHandler::startChatActivity}">
 
         <RelativeLayout
             android:id="@+id/inner_rl"
