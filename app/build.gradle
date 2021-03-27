@@ -103,7 +103,7 @@ dependencies {
     //汉字转拼音
     implementation 'com.belerweb:pinyin4j:2.5.0'
 
-    //button动画点击  【GitHub】 https://github.com/ChadCSong/ShineButton
+    //button绚丽动画点击  【GitHub】 https://github.com/ChadCSong/ShineButton
     implementation 'com.sackcentury:shinebutton:1.0.0'
 
     //一个扩展原生控件支持圆角矩形框背景的库,可以减少相关shape资源文件使用 【GitHub】 https://github.com/H07000223/FlycoRoundView
