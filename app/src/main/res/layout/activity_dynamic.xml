@@ -531,7 +531,6 @@
 
                             </LinearLayout>
 
-
                         </LinearLayout>
 
                     </LinearLayout>
@@ -548,7 +547,8 @@
             android:background="@android:color/transparent"
             android:layout_marginBottom="@dimen/dp_0"
             app:navigationIcon="?attr/homeAsUpIndicator"
-            app:layout_collapseMode="pin">
+            app:layout_collapseMode="pin"
+            tools:ignore="TooManyViews">
 
             <LinearLayout
                 android:id="@+id/buttonBar"

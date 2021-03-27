@@ -77,4 +77,11 @@
     <string name="instant_message_input_hint">input message</string>
     <string name="instant_message_send">Send</string>
 
+    <!--社交账号绑定页面 字符串数据-->
+    <string name="fragment_bind_social_account_tip_one">账号绑定登录社区</string>
+    <string name="fragment_bind_social_account_tip_two">出于安全因素，你至少需要保留一种登录方式</string>
+    <string name="fragment_bind_social_account_tip_phone">130****0000</string>
+    <string name="fragment_bind_social_account_tip_no_binding">未绑定</string>
+    <string name="fragment_bind_social_account_tip_wechat">锐</string>
+
 </resources>

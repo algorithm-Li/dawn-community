@@ -1,7 +1,12 @@
 package com.dawn.community.activity;
 
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,6 +19,7 @@ import com.dawn.community.base.BaseVmActivity;
 import com.dawn.community.databinding.ActivityDynamicBinding;
 import com.dawn.community.utils.common.SizeUtils;
 import com.dawn.community.utils.common.StatusBar;
+import com.dawn.community.utils.common.StatusBarUtil;
 import com.dawn.community.viewmodel.activity.DynamicViewModel;
 import com.scwang.smart.refresh.layout.api.RefreshHeader;
 import com.scwang.smart.refresh.layout.api.RefreshLayout;
@@ -30,8 +36,14 @@ public class DynamicActivity extends BaseVmActivity<ActivityDynamicBinding, Dyna
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         //启用沉浸式布局，白底黑字,需在setContentView前调用
-        StatusBar.fitSystemBar(this);
+        //StatusBar.fitSystemBar(this);
+        //setStatusBar();
         super.onCreate(savedInstanceState);
+
+        //状态栏透明和间距处理
+        StatusBarUtil.immersive(this);
+        StatusBarUtil.setPaddingSmart(this, viewDataBinding.toolbarDynamic);
+        StatusBarUtil.setMargin(this, findViewById(R.id.header));
 
         //设置ToolBar
         setSupportActionBar(viewDataBinding.toolbarDynamic);
@@ -120,5 +132,23 @@ public class DynamicActivity extends BaseVmActivity<ActivityDynamicBinding, Dyna
                 break;
         }
         return true;
+    }
+
+    /**
+     * 设置状态栏透明
+     */
+    private void setStatusBar()
+    {
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+                    | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);
+            window.setNavigationBarColor(Color.TRANSPARENT);
+        }
     }
 }
