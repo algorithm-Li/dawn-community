@@ -13,6 +13,8 @@ import com.dawn.community.adapter.utils_adapter.FollowPictureListAdapter;
 import com.dawn.community.bean.discover.PictureItem;
 import com.dawn.community.widget.RecyclerViewAtViewPager2;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 
 /**
@@ -47,12 +49,12 @@ public class RecyclerviewAdapter {
 
     /**
      * item_follow中的Recyclerview的加载器
-     * @param recyclerView Recyclerview控件
+     * @param recyclerView RecyclerViewAtViewPager2控件
      * @param pictureItemArrayList 图片资源数组
      * @param context 上下文
      */
     @BindingAdapter(value = {"imageArrayList","fragmentContext"})
-    public static void pictureList(RecyclerViewAtViewPager2 recyclerView, ArrayList<PictureItem> pictureItemArrayList, Context context){
+    public static void pictureList(@NotNull RecyclerViewAtViewPager2 recyclerView, ArrayList<PictureItem> pictureItemArrayList, Context context){
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(context);
         //设置方向为水平方向
