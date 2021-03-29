@@ -16,6 +16,10 @@
             name="context"
             type="android.content.Context" />
 
+        <variable
+            name="eventHandler"
+            type="com.dawn.community.binding_handler.CommonHandler" />
+
 
     </data>
 
@@ -108,7 +112,8 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 app:cardCornerRadius="4dp"
-                android:visibility="@{itemData.video ? View.VISIBLE : View.GONE}">
+                android:visibility="@{itemData.video ? View.VISIBLE : View.GONE}"
+                android:onClick="@{eventHandler::startVideo}">
 
                 <RelativeLayout
                     android:layout_width="match_parent"

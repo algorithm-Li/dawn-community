@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.dawn.community.R;
 import com.dawn.community.bean.discover.RecommendItem;
+import com.dawn.community.binding_handler.CommonHandler;
 import com.dawn.community.databinding.ItemRecommendBinding;
 
 import java.util.ArrayList;
@@ -41,6 +42,7 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.Inne
         //要有binding
         holder.itemRecommendBinding.setItemData(itemData);//拿到对应item的数据
         holder.itemRecommendBinding.setContext(context);
+        holder.itemRecommendBinding.setEventHandler(new CommonHandler());
     }
 
     @Override
