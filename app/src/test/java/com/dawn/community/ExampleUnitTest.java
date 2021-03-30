@@ -1,6 +1,10 @@
 package com.dawn.community;
 
+import androidx.lifecycle.ViewModelProvider;
+
 import com.dawn.community.api.HttpConfig;
+import com.dawn.community.fragment.social.ContactsFragment;
+import com.dawn.community.viewmodel.fragment.social.ContactsViewModel;
 
 import org.junit.Test;
 
@@ -21,5 +25,9 @@ public class ExampleUnitTest {
     public void printBaseUrl(){
         System.out.println(HttpConfig.BASE_URL);
         System.out.println(HttpConfig.BASE_URL + "/mp4/video_1.mp4");
+    }
+
+    @Test
+    public void viewModelTest(){
     }
 }

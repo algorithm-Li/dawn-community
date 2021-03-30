@@ -71,7 +71,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:onClick="@{(view)->eventHandler.startComment(view,itemData)}">
 
             <TextView
                 android:id="@+id/content_main"
@@ -84,7 +85,7 @@
                 android:textColor="#323131"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:ellipsize="end"/>
+                android:ellipsize="end" />
 
         </LinearLayout>
 

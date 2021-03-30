@@ -2,13 +2,15 @@ package com.dawn.community.bean.discover;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.io.Serializable;
+
 /**
  * @author Algorithm
  * @Date: 2021/3/25/0025
  * @Time: 23:54
  * 模拟数据，需根据实际需求修改
  */
-public class PictureItem {
+public class PictureItem implements Serializable {
 
     int image;
     boolean isVideo;

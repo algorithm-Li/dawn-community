@@ -2,6 +2,7 @@ package com.dawn.community.bean.discover;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -10,7 +11,7 @@ import java.util.ArrayList;
  * @Time: 23:52
  * 模拟数据，需根据实际需求修改
  */
-public class RecommendItem {
+public class RecommendItem implements Serializable {
 
     String postId;
     ArrayList<PictureItem> imageList;

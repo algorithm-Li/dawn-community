@@ -20,6 +20,7 @@
         <activity android:name=".activity.MessageCenterActivity" />
         <activity android:name=".activity.DynamicActivity"/>
         <activity android:name=".activity.ChatActivity"/>
+        <activity android:name=".activity.CommentActivity"/>
         <activity android:name=".activity.ShowVideoActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"/>

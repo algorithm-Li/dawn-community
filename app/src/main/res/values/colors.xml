@@ -25,6 +25,8 @@
     <color name="gray10">#e2e2e2</color>
     <color name="gray11">#b4b4b4</color>
     <color name="gray12">#2c2c2c</color>
+    <color name="gray13">#f2f2f2</color>
+    <color name="gray14">#F8F9F9</color>
 
     <!--微信标准色-->
     <color name="wechat_gray">#ededed</color>

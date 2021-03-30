@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+        <import type="com.dawn.community.R"/>
+
+        <variable
+            name="itemData"
+            type="com.dawn.community.bean.discover.RecommendItem" />
+
+        <variable
+            name="context"
+            type="android.content.Context" />
+
+        <variable
+            name="eventHandler"
+            type="com.dawn.community.binding_handler.CommonHandler" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarComment"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:theme="@style/ToolbarTheme"
+                android:background="@color/color_white"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appBar"
+            android:layout_above="@id/bottom_view">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white">
+
+                    <RelativeLayout
+                        android:id="@+id/userInfo_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_image"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/naeun_2"
+                            android:layout_alignParentStart="true"
+                            imageUrl="@{itemData.userImage}"
+                            />
+
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/user_image"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@{itemData.userName}"
+                            tools:text="username" />
+
+                        <ImageView
+                            android:id="@+id/followBtn"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/follow_256px"
+                            android:layout_alignTop="@id/user_name"
+                            android:clickable="true"
+                            android:focusable="true"
+                            isFollow="@{itemData.follow}"
+                            android:contentDescription="@string/TODO" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/content_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@{itemData.inputContent}"
+                            tools:text="这就是街舞芜湖~~~~~"
+                            android:paddingBottom="10dp"
+                            android:textSize="14sp"
+                            android:textColor="#323131"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:ellipsize="end" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/picture_or_movie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/picture_recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="@{itemData.video ? View.GONE : View.VISIBLE}"
+                            isVideo="@{itemData.video}"
+                            imageArrayList="@{itemData.imageList}"
+                            fragmentContext="@{context}">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/video_cardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            app:cardCornerRadius="4dp"
+                            android:visibility="@{itemData.video ? View.VISIBLE : View.GONE}"
+                            android:onClick="@{eventHandler::startVideo}">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/video_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="180dp"
+                                    android:scaleType="centerCrop"
+                                    android:background="@color/color_white"
+                                    imageUrl="@{itemData.videoImage}"
+                                    android:contentDescription="@string/TODO" />
+
+                                <ImageView
+                                    android:background="@drawable/play"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
+                                    android:contentDescription="@string/TODO" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_10"
+                        android:background="@color/wechat_gray"/>
+
+                    <include
+                        layout="@layout/item_comment"/>
+
+                    <include
+                        layout="@layout/item_comment"/>
+
+                    <include
+                        layout="@layout/item_comment"/>
+
+                    <include
+                        layout="@layout/item_comment"/>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include
+                layout="@layout/item_comment_bottom_inateraction" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>
