@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.dawn.community.R;
 import com.dawn.community.bean.message.ContactsItem;
+import com.dawn.community.binding_handler.CommonHandler;
 import com.dawn.community.databinding.ItemContactsBinding;
 
 import java.util.ArrayList;
@@ -44,6 +45,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.InnerH
         }else {
             holder.itemContactsBinding.setIsFirst(View.GONE);
         }
+        holder.itemContactsBinding.setEventHandler(new CommonHandler());
     }
 
     @Override

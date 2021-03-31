@@ -13,12 +13,22 @@ import com.dawn.community.base.BaseVmActivity;
 import com.dawn.community.databinding.ActivityShowVideoBinding;
 import com.dawn.community.viewmodel.activity.ShowVideoViewModel;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 import cn.jzvd.Jzvd;
 
 /**
  * @author Algorithm
  */
 public class ShowVideoActivity extends BaseVmActivity<ActivityShowVideoBinding, ShowVideoViewModel>{
+
+    String[] video_url = new String[]{
+            "video_1.mp4",
+            "video_2.mp4",
+    };
+
+    Random random = new Random(10);
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,7 +38,7 @@ public class ShowVideoActivity extends BaseVmActivity<ActivityShowVideoBinding, 
     @Override
     protected void initView() {
         super.initView();
-        viewDataBinding.videoPlayer.setUp(HttpConfig.BASE_URL + "/mp4/video_1.mp4","视频动态");
+        viewDataBinding.videoPlayer.setUp(HttpConfig.BASE_URL + "/mp4/" + video_url[random.nextInt(video_url.length)] ,"视频动态");
         Glide.with(this).load(R.drawable.naeun_1).into(viewDataBinding.videoPlayer.posterImageView);
         viewDataBinding.videoPlayer.startVideo();
     }

@@ -16,7 +16,7 @@ import java.util.Random;
  */
 public class ContactsRepository {
 
-    static int [] picArray = new int[]{
+    public static int [] picArray = new int[]{
             R.drawable.naeun_1,
             R.drawable.naeun_2,
             R.drawable.naeun_3,
@@ -27,7 +27,9 @@ public class ContactsRepository {
             R.drawable.naeun_8,
             R.drawable.naeun_9,
             R.drawable.naeun_10,
-            R.drawable.naeun_11};
+            R.drawable.naeun_11,
+            R.drawable.naeun_12
+    };
 
     public final static String [] nameArray = new String[]{
             "彭万里","高大山","谢大海","马宏宇","林莽","黄强辉","章汉夫","范长江",
@@ -48,7 +50,7 @@ public class ContactsRepository {
             ContactsItem contactsItem = new ContactsItem();
 
             contactsItem.setName(nameArray[i]);
-            contactsItem.setImage(picArray[random.nextInt(11)]);
+            contactsItem.setImage(picArray[random.nextInt(picArray.length)]);
 
             contactsItemArrayList.add(contactsItem);
         }
