@@ -99,4 +99,23 @@
     <string name="item_fans_follow_each_other_tip">互相关注</string>
     <string name="item_follow_list_follow_tip">已关注</string>
 
+    <!--更换性别 Fragment页面 字符串内容-->
+    <string name="change_sex_title">更换性别</string>
+    <string name="change_sex_male">\  男</string>
+    <string name="change_sex_female">\  女</string>
+    <string name="change_sex_secret">保密</string>
+
+    <!--更换签名 Fragment页面 字符串内容-->
+    <string name="change_description">更改签名</string>
+    <string name="change_description_hint_text">请输入你的签名</string>
+    <string name="change_description_tip_text">好签名更能彰显你的个性</string>
+
+    <!--更换手机号 Fragment页面 字符串内容-->
+    <string name="change_Phone">更改手机号</string>
+    <string name="change_Phone_hint_text">请输入你的手机号码</string>
+
+    <!--更换邮箱 Fragment页面 字符串内容-->
+    <string name="change_Email">更改邮箱</string>
+    <string name="change_Email_hint_text">请输入你的邮箱</string>
+
 </resources>

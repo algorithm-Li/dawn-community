@@ -112,6 +112,9 @@ dependencies {
     //视频播放，第三方库 【GitHub】 https://github.com/Jzvd/JZVideo
     implementation 'cn.jzvd:jiaozivideoplayer:7.6.0'
 
+    //时间选择器
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

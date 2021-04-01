@@ -7,5 +7,4 @@ import androidx.lifecycle.ViewModel;
  */
 public class ChangeNameViewModel extends ViewModel {
 
-
 }

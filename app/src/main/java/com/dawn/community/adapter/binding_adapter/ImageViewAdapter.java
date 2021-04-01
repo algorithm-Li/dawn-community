@@ -1,5 +1,6 @@
 package com.dawn.community.adapter.binding_adapter;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -50,6 +51,25 @@ public class ImageViewAdapter {
             Glide.with(imageView.getContext()).load(R.drawable.video).into(imageView);
         }else{
             imageView.setVisibility(View.GONE);
+        }
+    }
+
+    /**
+     * 决定是否加载 选中性别图片
+     * @param imageView ImageView控件
+     * @param chooseSex 判断
+     */
+    @BindingAdapter("chooseSex")
+    public static void chooseSex(@NotNull View imageView, String chooseSex){
+        int id = imageView.getId();
+        if(chooseSex!=null){
+            if((chooseSex.equals("保密")&& id == R.id.icon_change_sex_secret_choose) ||
+                    (chooseSex.equals("男")&& id == R.id.icon_change_sex_male_choose) ||
+                    (chooseSex.equals("女")&& id == R.id.icon_change_sex_female_choose)) {
+                imageView.setVisibility(View.VISIBLE);
+            }else {
+                imageView.setVisibility(View.GONE);
+            }
         }
     }
 }
