@@ -16,6 +16,8 @@ import com.dawn.community.fragment.social.SocialFragment;
 import com.dawn.community.utils.common.StatusBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomnavigation.LabelVisibilityMode;
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechUtility;
 
 import java.util.ArrayList;
 
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SpeechUtility.createUtility(this, SpeechConstant.APPID + "604ffe6e");
         super.onCreate(savedInstanceState);
         //启用沉浸式布局，白底黑字,需在setContentView前调用
         StatusBar.fitSystemBar(this);
