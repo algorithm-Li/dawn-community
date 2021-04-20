@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">community</string>
+
+    <!--讯飞 app_id -->
     <string name="app_id">604ffe6e</string>
+
     <!--BottomNavigationView 的菜单内容  -->
     <string name="menu_distinguish">识别</string>
     <string name="menu_contact">社交</string>
@@ -9,19 +12,20 @@
 
     <!--分割线 ======================================================== -->
     <!-- 登陆注册字符串信息 -->
-    <string name="login">Log in</string>
-    <string name="username">Username (Email/Phone)</string>
-    <string name="password">Password</string>
+    <string name="login">登录</string>
+    <string name="username">用户名 (邮箱/电话/账号名称)</string>
+    <string name="password">密码</string>
 
-    <string name="email">E-mail Address</string>
-    <string name="phone">Mobile Number</string>
-    <string name="name">Name</string>
-    <string name="sign_up">Sign up</string>
+    <string name="email">邮箱地址 E-mail Address</string>
+    <string name="phone">手机号码</string>
+    <string name="name">用户名</string>
+    <string name="sign_up">注册</string>
 
-    <string name="forgot_pass">Forgot Password?</string>
+    <string name="forgot_pass">忘记密码?</string>
 
-    <string name="google_login">Log in with Google</string>
-    <string name="fb_login">Log in with Facebook</string>
+    <string name="google_login">微信登录</string>
+    <string name="fb_login">QQ登录</string>
+    <string name="pass_text">跳过</string>
 
     <!--分割线 ======================================================== -->
 
@@ -167,5 +171,15 @@
         <item>4</item>
         <item>5</item>
     </string-array>
+
+    <!--toolbar_post_articles组件字符串内容-->
+    <string name="toolbar_post_articles_cancel_text">取消</string>
+    <string name="toolbar_post_articles_post_text">发贴</string>
+    <string name="toolbar_post_articles_send_post_text">发送</string>
+    <string name="toolbar_post_articles_username">用户名</string>
+
+    <string name="activity_post_articles_share_hint_text">分享新鲜事…</string>
+    <string name="activity_post_articles_location_text">显示位置</string>
+    <string name="activity_post_articles_public_text">公开</string>
 
 </resources>

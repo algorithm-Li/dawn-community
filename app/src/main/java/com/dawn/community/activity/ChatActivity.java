@@ -16,10 +16,8 @@ import com.dawn.community.R;
 import com.dawn.community.adapter.ChatAdapter;
 import com.dawn.community.base.BaseVmActivity;
 import com.dawn.community.databinding.ActivityChatBinding;
-import com.dawn.community.databinding.ActivityPersonInfoBinding;
 import com.dawn.community.utils.common.StatusBar;
 import com.dawn.community.viewmodel.activity.ChatViewModel;
-import com.dawn.community.viewmodel.activity.PersonInfoViewModel;
 import com.scwang.smart.refresh.footer.ClassicsFooter;
 import com.scwang.smart.refresh.layout.api.RefreshLayout;
 import com.scwang.smart.refresh.layout.listener.OnLoadMoreListener;
@@ -34,7 +32,9 @@ public class ChatActivity extends BaseVmActivity<ActivityChatBinding, ChatViewMo
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        setStatusBar();
+        //setStatusBar();
+        //启用沉浸式布局，白底黑字,需在setContentView前调用
+        StatusBar.fitSystemBar(this);
         super.onCreate(savedInstanceState);
     }
 

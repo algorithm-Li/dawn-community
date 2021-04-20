@@ -33,7 +33,7 @@ public class HistoryRepository {
         ArrayList<HistoryItem> historyItemArrayLists = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             HistoryItem historyItem = new HistoryItem();
-            historyItem.setContentTitle("【舞蹈风暴】民间反串艺人的一生与现代人具象化的万搬思绪像碰撞");
+            historyItem.setContentTitle("学习聋人通用手语，共创琼省椰城和谐");
             historyItem.setUserName("up主：陈海宗");
             historyItem.setPassTime(random.nextInt(100)+"分钟前");
             historyItem.setVideoImage(picArray[i]);

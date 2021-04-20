@@ -5,6 +5,8 @@ import androidx.lifecycle.MutableLiveData;
 import com.dawn.community.bean.discover.FollowItem;
 import com.dawn.community.bean.discover.PictureItem;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -17,6 +19,7 @@ public class FollowRepository {
 
     static Random random = new Random(25);
 
+    @NotNull
     public static MutableLiveData<ArrayList<FollowItem>> getFollowMessage(String id){
 
         //根据用户id去网上获取数据

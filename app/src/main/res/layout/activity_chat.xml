@@ -8,15 +8,16 @@
     </data>
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".activity.ChatActivity">
+        tools:context=".activity.ChatActivity"
+        android:fitsSystemWindows="true"
+        >
 
 
         <androidx.appcompat.widget.Toolbar
-            android:background="@color/wechat_gray"
+            android:background="@color/color_white"
             android:id="@+id/toolbar_chat"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -25,6 +26,11 @@
             app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
         </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:background="@color/gray7"/>
 
         <com.scwang.smart.refresh.layout.SmartRefreshLayout
             android:id="@+id/refreshLayout"

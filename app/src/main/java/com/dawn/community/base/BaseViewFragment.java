@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -42,5 +43,6 @@ public abstract class BaseViewFragment<T extends ViewDataBinding> extends Fragme
      * 子类需实现该方法，返回layout的id值
      * @return id 视图id
      */
+    @LayoutRes
     public abstract int getLayoutId();
 }

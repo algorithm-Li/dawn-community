@@ -7,14 +7,14 @@
 
     <item android:id="@+id/social_Fragment"
         android:title="@string/menu_contact"
-        android:icon="@mipmap/manage_64px" />
+        android:icon="@mipmap/ic_social_256px" />
 
     <item android:id="@+id/discover_Fragment"
         android:title="@string/menu_discover"
-        android:icon="@mipmap/manage_64px" />
+        android:icon="@mipmap/ic_discover" />
 
     <item android:id="@+id/mine_Fragment"
         android:title="@string/menu_mine"
-        android:icon="@mipmap/manage_64px" />
+        android:icon="@mipmap/ic_mine" />
 
 </menu>

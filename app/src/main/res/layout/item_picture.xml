@@ -3,6 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <import type="java.util.ArrayList"/>
+        <import type="com.dawn.community.bean.discover.PictureItem"/>
+
+        <variable
+            name="pictureList"
+            type="ArrayList&lt;PictureItem>" />
+
+        <variable
+            name="position"
+            type="int" />
+
         <variable
             name="pictureItem"
             type="com.dawn.community.bean.discover.PictureItem" />
@@ -28,7 +39,9 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:contentDescription="@string/TODO"
-                imageUrl="@{pictureItem.image}"/>
+                imageUrl="@{pictureItem.image}"
+                imageArrayList="@{pictureList}"
+                position="@{position}"/>
 
         </RelativeLayout>
 

@@ -20,6 +20,9 @@
             name="eventHandler"
             type="com.dawn.community.binding_handler.CommonHandler" />
 
+        <variable
+            name="position"
+            type="int" />
 
     </data>
 
@@ -52,7 +55,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:text="@{itemData.userName}"
-                tools:text="username" />
+                tools:text="username"
+                tools:ignore="RelativeOverlap" />
 
             <ImageView
                 android:id="@+id/followBtn"
@@ -127,13 +131,14 @@
                         android:scaleType="centerCrop"
                         android:background="@color/color_white"
                         imageUrl="@{itemData.videoImage}"
-                        />
+                        android:contentDescription="@string/TODO" />
 
                     <ImageView
                         android:background="@drawable/play"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_centerInParent="true"/>
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/TODO" />
 
                 </RelativeLayout>
 
@@ -187,7 +192,8 @@
                 android:src="@drawable/reply"
                 android:layout_toEndOf="@id/like_number"
                 android:layout_marginStart="15dp"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/TODO" />
 
             <TextView
                 android:id="@+id/reply_number"

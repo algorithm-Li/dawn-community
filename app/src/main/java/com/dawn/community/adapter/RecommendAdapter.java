@@ -43,6 +43,7 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.Inne
         holder.itemRecommendBinding.setItemData(itemData);//拿到对应item的数据
         holder.itemRecommendBinding.setContext(context);
         holder.itemRecommendBinding.setEventHandler(new CommonHandler());
+        holder.itemRecommendBinding.setPosition(position);
     }
 
     @Override

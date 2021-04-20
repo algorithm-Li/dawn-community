@@ -50,6 +50,8 @@
         <activity android:name=".activity.FollowListActivity"/>
         <activity android:name=".setting.IatSettings"/>
         <activity android:name=".setting.TtsSettings"/>
+        <activity android:name=".activity.PostArticlesActivity"/>
+        <activity android:name=".activity.ShowPicActivity"/>
         <activity android:name=".activity.ShowVideoActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"/>

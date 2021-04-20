@@ -13,7 +13,6 @@ import com.dawn.community.base.BaseVmActivity;
 import com.dawn.community.databinding.ActivityShowVideoBinding;
 import com.dawn.community.viewmodel.activity.ShowVideoViewModel;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 import cn.jzvd.Jzvd;
@@ -25,7 +24,8 @@ public class ShowVideoActivity extends BaseVmActivity<ActivityShowVideoBinding, 
 
     String[] video_url = new String[]{
             "video_1.mp4",
-            "video_2.mp4",
+            "video_3.mp4"
+            //"video_2.mp4"
     };
 
     Random random = new Random(10);

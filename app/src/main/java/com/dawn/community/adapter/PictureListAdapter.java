@@ -10,9 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.dawn.community.R;
 import com.dawn.community.bean.discover.PictureItem;
-import com.dawn.community.bean.discover.RecommendItem;
 import com.dawn.community.databinding.ItemPictureBinding;
-import com.dawn.community.databinding.ItemRecommendBinding;
 
 import java.util.ArrayList;
 
@@ -39,6 +37,8 @@ public class PictureListAdapter extends RecyclerView.Adapter<PictureListAdapter.
         //绑定数据，向binding里设置数据
         //要有binding
         holder.itemPictureBinding.setPictureItem(pictureItem);//拿到对应item的数据
+        holder.itemPictureBinding.setPictureList(pictureItemArrayList);
+        holder.itemPictureBinding.setPosition(position);
     }
 
     @Override

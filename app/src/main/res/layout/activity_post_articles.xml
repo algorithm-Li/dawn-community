@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="commonHandler"
+            type="com.dawn.community.binding_handler.CommonHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context=".activity.PostArticlesActivity">
+
+        <include
+            android:id="@+id/toolbar_top"
+            layout="@layout/toolbar_post_articles"
+            app:commonHandler="@{commonHandler}"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/post_bg">
+
+            <LinearLayout
+                android:id="@+id/idea_linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/idea_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="12.5dp"
+                    android:background="@color/post_bg"
+                    android:gravity="top"
+                    android:hint="@string/activity_post_articles_share_hint_text"
+                    android:inputType="textMultiLine"
+                    android:minHeight="100dp"
+                    android:textColor="@color/post_text"
+                    android:textColorHint="@color/post_hint"
+                    android:textSize="@dimen/font_size_15" />
+
+                <include layout="@layout/compose_repost_layout" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ImgList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/blank_space"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/post_bg"
+            android:contentDescription="@string/TODO" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/post_bg"
+            android:gravity="center_horizontal"
+            android:paddingBottom="9dp"
+            android:paddingTop="9dp">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="27dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:drawableStart="@drawable/compose_locatebutton_ready_auto"
+                android:gravity="center"
+                android:text="@string/activity_post_articles_location_text"
+                android:textColor="#929292" />
+
+
+            <TextView
+                android:id="@+id/public_button"
+                android:layout_width="60dp"
+                android:layout_height="27dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/compose_public_button"
+                android:gravity="center"
+                android:text="@string/activity_post_articles_public_text"
+                android:textColor="#527ead" />
+
+            <TextView
+                android:id="@+id/limitTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/public_button"
+                android:gravity="center"
+                android:textColor="#e03f22"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/post_bottomBar_bg"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/compose_toolbar_picture_auto"
+                android:contentDescription="@string/TODO" />
+
+            <ImageView
+                android:id="@+id/mention_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/compose_mention_button_background_auto"
+                android:contentDescription="@string/TODO" />
+
+            <ImageView
+                android:id="@+id/trend_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/compose_trend_button_background_auto" />
+
+            <ImageView
+                android:id="@+id/emoticon_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/compose_emoticon_button_background_auto" />
+
+            <ImageView
+                android:id="@+id/more_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/compose_toolbar_more_auto" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

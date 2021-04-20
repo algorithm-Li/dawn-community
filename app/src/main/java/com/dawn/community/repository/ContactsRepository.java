@@ -5,6 +5,8 @@ import androidx.lifecycle.MutableLiveData;
 import com.dawn.community.R;
 import com.dawn.community.bean.message.ContactsItem;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
@@ -42,14 +44,15 @@ public class ContactsRepository {
 
     static Random random = new Random(25);
 
+    @NotNull
     public static MutableLiveData<ArrayList<ContactsItem>> getContactsItem(String id){
         //根据用户id去网上获取数据
         //这里模拟数据
         ArrayList<ContactsItem> contactsItemArrayList = new ArrayList<>();
-        for (int i = 0; i < nameArray.length; i++) {
+        for (String s : nameArray) {
             ContactsItem contactsItem = new ContactsItem();
 
-            contactsItem.setName(nameArray[i]);
+            contactsItem.setName(s);
             contactsItem.setImage(picArray[random.nextInt(picArray.length)]);
 
             contactsItemArrayList.add(contactsItem);

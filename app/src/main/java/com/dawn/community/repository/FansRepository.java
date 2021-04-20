@@ -4,6 +4,8 @@ import androidx.lifecycle.MutableLiveData;
 
 import com.dawn.community.bean.FansItem;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -21,6 +23,7 @@ public class FansRepository {
      * @param id user id
      * @return 返回 MutableLiveData<ArrayList<FansItem>> 可观察对象
      */
+    @NotNull
     public static MutableLiveData<ArrayList<FansItem>> getFansItem(String id){
 
         ArrayList<FansItem> fansItemArrayList = new ArrayList<>();

@@ -2,6 +2,7 @@ package com.dawn.community.base;
 
 import android.os.Bundle;
 
+import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -35,5 +36,6 @@ public abstract class BaseViewActivity<T extends ViewDataBinding> extends AppCom
      * 子类需实现该方法，返回layout的id值
      * @return id 视图id
      */
+    @LayoutRes
     public abstract int getLayoutId();
 }

@@ -73,8 +73,8 @@ dependencies {
     implementation "androidx.viewpager2:viewpager2:1.0.0"
 
     /*Glide组件*/
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     //FastJson解析 阿里巴巴家的  【GitHub】 https://github.com/alibaba/fastjson
     implementation 'com.alibaba:fastjson:1.2.59'
@@ -120,6 +120,12 @@ dependencies {
 
     // 权限请求框架：【GitHub】 https://github.com/getActivity/XXPermissions
     implementation 'com.hjq:xxpermissions:10.6'
+
+    //FloatingActionButton 修改版，可以弹出子菜单 【GitHub】https://github.com/wangjiegulu/RapidFloatingActionButton
+    implementation 'com.github.wangjiegulu:rfab:2.0.0'
+
+    //可放大缩小的图片View 【GitHub】https://github.com/Baseflow/PhotoView
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

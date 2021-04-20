@@ -4,6 +4,8 @@ import androidx.lifecycle.MutableLiveData;
 
 import com.dawn.community.bean.FollowMessageItem;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -21,6 +23,7 @@ public class FollowListRepository {
      * @param id user id
      * @return 返回 MutableLiveData<ArrayList<FansItem>> 可观察对象
      */
+    @NotNull
     public static MutableLiveData<ArrayList<FollowMessageItem>> getFollowMessage(String id){
 
         ArrayList<FollowMessageItem> followMessageItemArrayList = new ArrayList<>();

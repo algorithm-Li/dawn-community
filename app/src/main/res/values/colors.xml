@@ -80,4 +80,45 @@
     <!--常用背景色-->
     <color name="colorBackgroundDark">#f2f2f2</color>
 
+    <!--发帖页面颜色-->
+    <color name="top_bar_bg">#FFFFFF</color><!--顶部Bar的背景样式-->
+    <color name="top_bar_center">#545454</color><!--顶部Bar字体颜色-->
+    <color name="top_bar_bottom_drive">#e3e3e3</color><!--顶部Bar的底部分割线-->
+    <color name="top_bar_center_highlight_bg">#e7e7e7</color><!--顶部Bar的分组的按压颜色-->
+    <color name="top_bar_left_right_text">#4c4c4c</color><!--顶部Bar的左右字体的颜色-->
+    <color name="top_bar_left_right_text_highlight">#f68008</color><!--顶部Bar的左右字体的高亮颜色-->
+
+    <color name="cancel_text">#494949</color><!--取消按钮文本颜色 -->
+    <color name="middle_send_text">#505050</color><!--top_bar中间区域 发微博文本颜色 -->
+    <color name="middle_username_text">#b4b4b4</color><!--top_bar中间区域 用户名文本颜色 -->
+
+    <!-- 发送按钮在普通状态下，不可点击 -->
+    <color name="normal_send_button_bg">#FFFFFF</color>
+    <color name="normal_send_button_stoke">#d8d8d8</color>
+    <color name="normal_send_button_text">#b5b5b5</color>
+
+    <!-- 发送按钮在按压状态下 -->
+    <color name="press_send_button_bg">#df7500</color>
+    <color name="press_send_button_stoke">#df7500</color>
+    <color name="press_send_button_text">#ffecd3</color>
+
+    <!-- 发送按钮在可以点击的状态下 -->
+    <color name="highlight_send_button_bg">#fe8300</color>
+    <color name="highlight_send_button_stoke">#fe8300</color>
+    <color name="highlight_send_button_text">#fbffff</color>
+
+    <!--发送帖子界面 -->
+    <color name="post_bg">#FFFFFF</color>
+    <color name="post_hint">#808080</color>
+    <color name="post_text">#333333</color>
+    <color name="post_bottomBar_bg">#f9f9f9</color>
+
+    <!-- 帖子内容颜色-白天 -->
+    <color name="origin_nor_bg">#FFFFFF</color><!--帖子的普通背景颜色-->
+    <color name="origin_highlight_bg">#ededed</color><!--帖子的按压状态下的背景颜色-->
+
+    <color name="retweet_weibo_bg">#f7f7f7</color>
+    <color name="retweet_weibo_author">#313131</color>
+    <color name="retweet_weibo_text">#909090</color>
+
 </resources>

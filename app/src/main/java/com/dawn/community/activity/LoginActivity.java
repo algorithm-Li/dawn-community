@@ -48,7 +48,7 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
                 startActivity(new Intent(CommunityApplication.getContext(),SignUpActivity.class));
             }
         });
-        viewDataBinding.passLogin.setOnClickListener(new View.OnClickListener() {
+        viewDataBinding.relBtnPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(CommunityApplication.getContext(), MainActivity.class));
@@ -147,6 +147,7 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
                 case R.id.relBtnLogin:
                 case R.id.relBtnLoginGoogle:
                 case R.id.relBtnLoginFacebook:
+                case R.id.relBtnPass:
                     animation = MyAnimations.getInstance().scaleAnimation();
                     break;
                 case R.id.txtSignUp:
@@ -184,6 +185,8 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
                         case R.id.relBtnLoginGoogle:
                             startAnimatingOthers(viewDataBinding.relBtnLoginFacebook,800L);
                             break;
+                        case R.id.relBtnLoginFacebook:
+                            startAnimatingOthers(viewDataBinding.relBtnPass,800L);
                     }
                 }
 
@@ -221,6 +224,7 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
         viewDataBinding.relBtnLogin.setVisibility(View.INVISIBLE);
         viewDataBinding.relBtnLoginGoogle.setVisibility(View.INVISIBLE);
         viewDataBinding.relBtnLoginFacebook.setVisibility(View.INVISIBLE);
+        viewDataBinding.relBtnPass.setVisibility(View.INVISIBLE);
         viewDataBinding.txtSignUp.setVisibility(View.INVISIBLE);
         viewDataBinding.txtForgotPass.setVisibility(View.INVISIBLE);
 
@@ -233,6 +237,7 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
 
         viewDataBinding.relHeader.setVisibility(View.INVISIBLE);
         viewDataBinding.viewSeparator.setVisibility(View.INVISIBLE);
+
     }
 
     @Override

@@ -60,7 +60,9 @@
                     android:layout_height="wrap_content"
                     android:text="@{itemData.des}"
                     android:textSize="@dimen/font_size_10"
-                    tools:text="奇奇怪怪的世界奇奇怪怪的人" />
+                    tools:text="奇奇怪怪的世界奇奇怪怪的人"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
 
             </LinearLayout>
 
