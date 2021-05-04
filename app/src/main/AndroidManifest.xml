@@ -40,6 +40,7 @@
         android:theme="@style/AppTheme2"
         android:networkSecurityConfig="@xml/network_security_config"
         tools:targetApi="n">
+        <activity android:name=".activity.TestActivity"/>
         <activity android:name=".activity.PersonInfoActivity"/>
         <activity android:name=".activity.SignUpActivity" />
         <activity android:name=".activity.MessageCenterActivity" />
@@ -52,6 +53,7 @@
         <activity android:name=".setting.TtsSettings"/>
         <activity android:name=".activity.PostArticlesActivity"/>
         <activity android:name=".activity.ShowPicActivity"/>
+        <activity android:name=".activity.SettingActivity"/>
         <activity android:name=".activity.ShowVideoActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"/>

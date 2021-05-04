@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="commonHandel"
+            type="com.dawn.community.binding_handler.CommonHandler" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -333,7 +335,8 @@
                         android:focusable="true"
                         android:orientation="horizontal"
                         android:paddingStart="@dimen/dp_15"
-                        android:paddingEnd="@dimen/dp_15">
+                        android:paddingEnd="@dimen/dp_15"
+                        android:onClick="@{commonHandel::startMain}">
 
                         <TextView
                             style="@style/MyTextBold"
@@ -346,7 +349,8 @@
                             android:layout_toStartOf="@+id/imgArrowPass"
                             android:textColor="@color/colorPrimary"
                             android:clickable="true"
-                            android:focusable="true" />
+                            android:focusable="true"
+                            android:onClick="@{commonHandel::startMain}"/>
 
                         <ImageView
                             android:id="@+id/imgArrowPass"
@@ -356,7 +360,8 @@
                             android:layout_centerVertical="true"
                             android:contentDescription="@string/fb_login"
                             android:src="@drawable/ic_arrow"
-                            android:tint="@color/colorFacebook" />
+                            android:tint="@color/colorFacebook"
+                            android:onClick="@{commonHandel::startMain}"/>
 
                     </RelativeLayout>
 

@@ -2,9 +2,11 @@
   <dictionary name="Algorithm">
     <words>
       <w>appid</w>
+      <w>blankj</w>
       <w>colorprimary</w>
       <w>feedcard</w>
       <w>foucs</w>
+      <w>gson</w>
       <w>iattest</w>
       <w>jzvd</w>
       <w>locatebutton</w>
@@ -14,9 +16,11 @@
       <w>rfab</w>
       <w>scwang</w>
       <w>textview</w>
+      <w>topbar</w>
       <w>viewmodel</w>
       <w>wechat</w>
       <w>weibo</w>
+      <w>weixin</w>
     </words>
   </dictionary>
 </component>

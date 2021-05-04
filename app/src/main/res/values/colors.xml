@@ -38,6 +38,9 @@
     <!--白色-->
     <color name="color_white">#ffffff</color>
 
+    <!--红色-->
+    <color name="red">#FF0000</color><!--红色 -->
+
     <!--常用颜色-->
     <color name="color_000">#000000</color>
     <color name="color_333">#333333</color>
@@ -120,5 +123,20 @@
     <color name="retweet_weibo_bg">#f7f7f7</color>
     <color name="retweet_weibo_author">#313131</color>
     <color name="retweet_weibo_text">#909090</color>
+
+    <!-- TopBar 一系列颜色 -->
+    <color name="topbar_bg">#FFFFFF</color><!--顶部Bar的背景样式-->
+    <color name="topbar_center">#545454</color><!--顶部Bar字体颜色-->
+    <color name="topbar_bottom_drive">#e3e3e3</color><!--顶部Bar的底部分割线-->
+    <color name="topbar_center_highlight_bg">#e7e7e7</color><!--顶部Bar的分组的按压颜色-->
+    <color name="topbar_left_right_text">#4c4c4c</color><!--顶部Bar的左右字体的颜色-->
+    <color name="topbar_left_right_text_highlight">#f68008</color><!--顶部Bar的左右字体的高亮颜色-->
+
+    <!--按钮栏-白天 -->
+    <color name="rl_normal_bg">#FFFFFF</color><!--状态栏的的背景颜色-->
+    <color name="rl_highlight_bg">#f2f2f2</color><!--状态栏的的背景颜色-->
+    <color name="rl_text_color">#111111</color>
+
+
 
 </resources>

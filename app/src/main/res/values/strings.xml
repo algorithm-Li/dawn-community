@@ -15,11 +15,15 @@
     <string name="login">登录</string>
     <string name="username">用户名 (邮箱/电话/账号名称)</string>
     <string name="password">密码</string>
+    <string name="password_again_text">再次输入密码</string>
 
     <string name="email">邮箱地址 E-mail Address</string>
     <string name="phone">手机号码</string>
     <string name="name">用户名</string>
     <string name="sign_up">注册</string>
+
+    <string name="check_code_text">验证码</string>
+    <string name="check_code_tip_text">获取验证码</string>
 
     <string name="forgot_pass">忘记密码?</string>
 
@@ -181,5 +185,20 @@
     <string name="activity_post_articles_share_hint_text">分享新鲜事…</string>
     <string name="activity_post_articles_location_text">显示位置</string>
     <string name="activity_post_articles_public_text">公开</string>
+
+    <!--toolbar_settings 字符串内容-->
+    <string name="toolbar_settings_setting_text">设置</string>
+
+    <!--fragment_setting 页面字符串内容-->
+    <string name="fragment_setting_account_manger_text">帐号管理</string>
+    <string name="fragment_setting_notice_text">通知</string>
+    <string name="fragment_setting_private_safety_text">隐私与安全</string>
+    <string name="fragment_setting_common_setting_text">通用设置</string>
+    <string name="fragment_setting_feedback_text">意见反馈</string>
+    <string name="fragment_setting_about_text">关于</string>
+    <string name="fragment_setting_clean_cache_text">清理缓存</string>
+    <string name="fragment_setting_login_out_text">退出</string>
+
+
 
 </resources>

@@ -135,61 +135,62 @@
                     android:paddingEnd="@dimen/dp_30">
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/inpName"
+                        android:id="@+id/inpTelephone"
                         style="@style/MyTextInputLayoutStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp_10"
-                        android:hint="@string/name"
-                        app:hintTextAppearance="@style/MyTextHint">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            style="@style/MyEditTextRegular"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:imeOptions="actionNext"
-                            android:inputType="textEmailAddress"
-                            android:maxLength="100" />
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/inpEmail"
-                        style="@style/MyTextInputLayoutStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dp_20"
-                        android:hint="@string/email"
-                        app:hintTextAppearance="@style/MyTextHint">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            style="@style/MyEditTextRegular"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:imeOptions="actionNext"
-                            android:inputType="textEmailAddress"
-                            android:maxLength="100" />
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/inpPhone"
-                        style="@style/MyTextInputLayoutStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dp_20"
                         android:hint="@string/phone"
                         app:hintTextAppearance="@style/MyTextHint">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etTelephone"
                             style="@style/MyEditTextRegular"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:imeOptions="actionNext"
-                            android:inputType="number"
-                            android:maxLength="10" />
+                            android:inputType="text"
+                            android:maxLength="100" />
 
                     </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LLCheckCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inpCheckCode"
+                            style="@style/MyTextInputLayoutStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:hint="@string/check_code_text"
+                            app:hintTextAppearance="@style/MyTextHint"
+                            android:layout_weight="5">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etCheckCode"
+                                style="@style/MyEditTextRegular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLength="50" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnCheckCode"
+                            android:layout_width="@dimen/dp_60"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:layout_weight="1"
+                            android:background="@color/gray8"
+                            android:text="@string/check_code_tip_text"/>
+
+                    </LinearLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/inpPassword"
@@ -207,11 +208,29 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:imeOptions="actionDone"
-                            android:inputType="textEmailAddress"
                             android:maxLength="50" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inpPasswordAgain"
+                        style="@style/MyTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:hint="@string/password_again_text"
+                        app:hintTextAppearance="@style/MyTextHint"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPasswordAgain"
+                            style="@style/MyEditTextRegular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:maxLength="50" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"

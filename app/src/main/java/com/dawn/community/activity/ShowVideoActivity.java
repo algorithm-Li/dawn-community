@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.dawn.community.R;
-import com.dawn.community.api.HttpConfig;
+import com.dawn.community.config.HttpConfig;
 import com.dawn.community.base.BaseVmActivity;
 import com.dawn.community.databinding.ActivityShowVideoBinding;
 import com.dawn.community.viewmodel.activity.ShowVideoViewModel;

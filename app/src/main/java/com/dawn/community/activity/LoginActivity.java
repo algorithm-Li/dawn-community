@@ -10,9 +10,9 @@ import android.view.animation.AnimationUtils;
 import androidx.annotation.Nullable;
 
 import com.dawn.community.CommunityApplication;
-import com.dawn.community.MainActivity;
 import com.dawn.community.R;
 import com.dawn.community.base.BaseVmActivity;
+import com.dawn.community.binding_handler.CommonHandler;
 import com.dawn.community.databinding.ActivityLoginBinding;
 import com.dawn.community.utils.MyAnimations;
 import com.dawn.community.utils.common.StatusBar;
@@ -35,7 +35,6 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
         super.initView();
         viewDataBinding.etPassword.setTransformationMethod(new PasswordTransformationMethod());
         hideAllViews();
-
     }
 
     @Override
@@ -46,14 +45,27 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(CommunityApplication.getContext(),SignUpActivity.class));
+                finish();
             }
         });
-        viewDataBinding.relBtnPass.setOnClickListener(new View.OnClickListener() {
+        /*viewDataBinding.relBtnPass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(CommunityApplication.getContext(), MainActivity.class));
             }
-        });
+        });*/
+    }
+
+    @Override
+    protected void initViewModel() {
+        super.initViewModel();
+
+    }
+
+    @Override
+    protected void startLoadData() {
+        super.startLoadData();
+        viewDataBinding.setCommonHandel(new CommonHandler());
     }
 
     @Override

@@ -148,7 +148,6 @@ public class RecommendFragment extends BaseVmFragment<FragmentRecommendBinding, 
     public void onRFACItemLabelClick(int position, RFACLabelItem item) {
         Intent intent = new Intent(requireContext(), PostArticlesActivity.class);
         startActivity(intent);
-        Toast.makeText(getContext(), "clicked label: " + position, Toast.LENGTH_SHORT).show();
         rfabHelper.toggleContent();
     }
 
@@ -156,7 +155,6 @@ public class RecommendFragment extends BaseVmFragment<FragmentRecommendBinding, 
     public void onRFACItemIconClick(int position, RFACLabelItem item) {
         Intent intent = new Intent(requireContext(), PostArticlesActivity.class);
         startActivity(intent);
-        Toast.makeText(getContext(), "clicked icon: " + position, Toast.LENGTH_SHORT).show();
         rfabHelper.toggleContent();
     }
 }

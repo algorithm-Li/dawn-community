@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 
+import com.dawn.community.MainActivity;
 import com.dawn.community.R;
 import com.dawn.community.activity.ChatActivity;
 import com.dawn.community.activity.ShowVideoActivity;
@@ -36,6 +37,14 @@ public class CommonHandler {
      */
     public void startVideo(@NonNull View v){
         v.getContext().startActivity(new Intent(v.getContext(), ShowVideoActivity.class));
+    }
+
+    /**
+     * 加载 MainActivity
+     * @param v 视图
+     */
+    public void startMain(@NonNull View v){
+        v.getContext().startActivity(new Intent(v.getContext(), MainActivity.class));
     }
 
     /**

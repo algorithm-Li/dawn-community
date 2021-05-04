@@ -1,10 +1,10 @@
 package com.dawn.community;
 
-import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.MutableLiveData;
 
-import com.dawn.community.api.HttpConfig;
-import com.dawn.community.fragment.social.ContactsFragment;
-import com.dawn.community.viewmodel.fragment.social.ContactsViewModel;
+import com.dawn.community.api.viewobject.UserModel;
+import com.dawn.community.config.HttpConfig;
+import com.dawn.community.repository.LoginRepository;
 
 import org.junit.Test;
 
@@ -29,5 +29,12 @@ public class ExampleUnitTest {
 
     @Test
     public void viewModelTest(){
+    }
+
+    @Test
+    public void doLogin(){
+        MutableLiveData<UserModel> login = LoginRepository.doLogin("1", "123456", "login");
+        UserModel userModel = login.getValue();
+        System.out.println(userModel);
     }
 }
