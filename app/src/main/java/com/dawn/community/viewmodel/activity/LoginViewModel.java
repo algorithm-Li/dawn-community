@@ -15,9 +15,9 @@ import com.dawn.community.repository.LoginRepository;
  */
 public class LoginViewModel extends ViewModel {
 
-    MutableLiveData<LoginState> LOGIN_STATE = new MutableLiveData<>();
+    public MutableLiveData<LoginState> LOGIN_STATE = new MutableLiveData<>();
 
-    static enum LoginState{
+    public static enum LoginState{
         UN_LOGIN,
         LOGIN_LOADING,
         LOGIN_FAIL,

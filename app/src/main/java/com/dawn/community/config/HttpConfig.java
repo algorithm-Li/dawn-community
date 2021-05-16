@@ -13,7 +13,7 @@ public class HttpConfig {
 
     public static final String PROTOCOL = "http";
     public static final String PORT = "8080";
-    public static final String DOMAIN_NAME = "10.243.129.166";
+    public static final String DOMAIN_NAME = "10.255.86.189";
     public static final String WEB_DIRECTORY = "TestWeb";
 
     public static final String BASE_URL = PROTOCOL + "://" + DOMAIN_NAME + ":" + PORT + "/" + WEB_DIRECTORY;

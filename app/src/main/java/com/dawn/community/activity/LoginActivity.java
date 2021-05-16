@@ -1,20 +1,33 @@
 package com.dawn.community.activity;
 
+import android.animation.Animator;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.lifecycle.Observer;
 
 import com.dawn.community.CommunityApplication;
+import com.dawn.community.MainActivity;
 import com.dawn.community.R;
+import com.dawn.community.api.viewobject.UserModel;
+import com.dawn.community.api.viewobject.request.bean.LoginReqBean;
 import com.dawn.community.base.BaseVmActivity;
 import com.dawn.community.binding_handler.CommonHandler;
 import com.dawn.community.databinding.ActivityLoginBinding;
 import com.dawn.community.utils.MyAnimations;
+import com.dawn.community.utils.common.Interpolator;
 import com.dawn.community.utils.common.StatusBar;
 import com.dawn.community.viewmodel.activity.LoginViewModel;
 
@@ -48,12 +61,42 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
                 finish();
             }
         });
-        /*viewDataBinding.relBtnPass.setOnClickListener(new View.OnClickListener() {
+
+        viewDataBinding.relBtnLogin.setOnClickListener(new animationOnClickListener());
+    }
+
+    @Override
+    protected void observerData() {
+        super.observerData();
+        //观察登录是否成功数据
+        viewModel.userModelLiveData.observe(this, new Observer<UserModel>() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(CommunityApplication.getContext(), MainActivity.class));
+            public void onChanged(UserModel userModel) {
+                if(userModel.getCode() == 200){
+                    viewModel.LOGIN_STATE.setValue(LoginViewModel.LoginState.LOGIN_SUCCESS);
+                }else{
+                    viewModel.LOGIN_STATE.setValue(LoginViewModel.LoginState.LOGIN_FAIL);
+                }
             }
-        });*/
+        });
+
+        //观察登录状态数据
+        viewModel.LOGIN_STATE.observe(this, new Observer<LoginViewModel.LoginState>() {
+            @Override
+            public void onChanged(LoginViewModel.LoginState loginState) {
+                switch (loginState){
+                    case LOGIN_SUCCESS:
+                        Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                        finish();
+                        break;
+                    case LOGIN_FAIL:
+                        recovery();
+                        Toast.makeText(LoginActivity.this, "登录失败", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+            }
+        });
     }
 
     @Override
@@ -250,6 +293,131 @@ public class LoginActivity extends BaseVmActivity<ActivityLoginBinding, LoginVie
         viewDataBinding.relHeader.setVisibility(View.INVISIBLE);
         viewDataBinding.viewSeparator.setVisibility(View.INVISIBLE);
 
+    }
+
+    class animationOnClickListener implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            if(viewDataBinding.inputLayLout.getVisibility() == View.VISIBLE){
+
+                //先隐藏里面的内容
+                viewDataBinding.inpUsername.setVisibility(View.INVISIBLE);
+                viewDataBinding.inpPassword.setVisibility(View.INVISIBLE);
+                viewDataBinding.txtForgotPass.setVisibility(View.INVISIBLE);
+                viewDataBinding.relBtnLogin.setVisibility(View.INVISIBLE);
+                viewDataBinding.txtSignUp.setVisibility(View.INVISIBLE);
+
+                //再隐藏外壳
+                inputAnimator(viewDataBinding.inputLayLout);
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        LoginReqBean loginReqBean = new LoginReqBean(
+                                viewDataBinding.etUsername.getText().toString(),
+                                viewDataBinding.etPassword.getText().toString(),
+                                "login");
+                        viewModel.setLoginReqBean(loginReqBean);
+                        viewModel.LOGIN_STATE.setValue(LoginViewModel.LoginState.LOGIN_LOADING);
+                    }
+                }, 2000);
+
+            }
+        }
+    }
+
+    private void inputAnimator(final View view) {
+
+        AnimatorSet set = new AnimatorSet();
+
+        /*ValueAnimator animator = ValueAnimator.ofFloat(0, w);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                float value = (Float) animation.getAnimatedValue();
+                ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) view
+                        .getLayoutParams();
+                params.leftMargin = (int) value;
+                params.rightMargin = (int) value;
+                view.setLayoutParams(params);
+            }
+        });*/
+
+        ObjectAnimator animator2 = ObjectAnimator.ofFloat(viewDataBinding.inputLayLout,
+                "scaleX", 1f, 0.5f);
+        set.setDuration(1000);
+        set.setInterpolator(new AccelerateDecelerateInterpolator());
+        //set.playTogether(animator, animator2);
+        set.play(animator2);
+        set.start();
+        set.addListener(new Animator.AnimatorListener() {
+
+            @Override
+            public void onAnimationStart(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+                // TODO Auto-generated method stub
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+
+                //隐藏外壳后，载入新的内容
+                viewDataBinding.loginLayoutProgress.setVisibility(View.VISIBLE);
+                progressAnimator(viewDataBinding.loginLayoutProgress);
+                viewDataBinding.inputLayLout.setVisibility(View.GONE);
+
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+
+            }
+        });
+
+    }
+
+    private void progressAnimator(final View view) {
+        PropertyValuesHolder animator = PropertyValuesHolder.ofFloat("scaleX",
+                0.5f, 1f);
+        PropertyValuesHolder animator2 = PropertyValuesHolder.ofFloat("scaleY",
+                0.5f, 1f);
+        ObjectAnimator animator3 = ObjectAnimator.ofPropertyValuesHolder(view,
+                animator, animator2);
+        animator3.setDuration(1000);
+        animator3.setInterpolator(new Interpolator());
+        animator3.start();
+    }
+
+    /**
+     * 恢复初始状态
+     */
+    private void recovery() {
+
+        viewDataBinding.loginLayoutProgress.setVisibility(View.GONE);
+
+        viewDataBinding.inpUsername.setVisibility(View.VISIBLE);
+        viewDataBinding.inpPassword.setVisibility(View.VISIBLE);
+        viewDataBinding.txtForgotPass.setVisibility(View.VISIBLE);
+        viewDataBinding.relBtnLogin.setVisibility(View.VISIBLE);
+        viewDataBinding.txtSignUp.setVisibility(View.VISIBLE);
+        viewDataBinding.inputLayLout.setVisibility(View.VISIBLE);
+
+        ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) viewDataBinding.inputLayLout.getLayoutParams();
+        params.leftMargin = 0;
+        params.rightMargin = 0;
+        viewDataBinding.inputLayLout.setLayoutParams(params);
+
+        ObjectAnimator animator2 = ObjectAnimator.ofFloat(viewDataBinding.inputLayLout, "scaleX", 0.5f,1f );
+        animator2.setDuration(500);
+        animator2.setInterpolator(new AccelerateDecelerateInterpolator());
+        animator2.start();
     }
 
     @Override
